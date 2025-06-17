@@ -1,0 +1,84 @@
+/* Doors title */
+h1 {
+  font-size: 60px;
+}
+
+/* Secondary title */
+h4 {
+  font-size: 12px;
+}
+
+/* Line Break */
+hr {
+  margin-left: 34%;
+  margin-right: 34%;
+  border: 1px dotted blue;
+}
+
+/* Doors & Secondary Container */
+.titles {
+  text-align: center;
+  margin-top: 2rem;
+  color: blue;
+  font-family: monospace;
+}
+
+/* Main paragraphs about doors */
+.paragraphs {
+  text-align: justify;
+  font-family: monospace;
+  font-size: 15px;
+  padding: 1rem;
+  margin-left: 33%;
+  margin-right: 33%;
+  color: blue;
+}
+
+/* ------ Photos Begin ------- */
+/* Responsive images + sets size of 400px for ALL */
+img {
+  max-width: 100%;
+  height: auto;
+  height: 400px;
+}
+
+/* Photo gallery container */
+.photos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+/* Dropdown list (in this country, not in this country) */
+summary {
+  /* background-color: rgb(207, 221, 255); */
+  border: 1px dotted blue;
+  padding: 12px;
+  font-family: monospace;
+  font-size: 15px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 6.5rem;
+  margin-right: 6.5rem;
+  font-weight: bold;
+  color: blue;
+}
+summary:hover {
+  cursor: cell;
+  background-color: rgb(207, 221, 255);
+}
+
+ul {
+  list-style-type: circle;
+  text-align: left;
+  font-family: monospace;
+  font-size: 15px;
+  padding: 1rem;
+  margin-left: 40%;
+  margin-right: 33%;
+  color: blue;
+}
+li {
+  margin-top: 5%;
+}
