@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%; /* Ensures html and body take up the full viewport height */
+  margin: 10; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  overflow-x: hidden; /* Prevents horizontal scrollbar if content overflows */
+  overflow-y: hidden;
+}
+
+/* Keeps images within browser size */
+/* img {
+  max-width: 100%;
+} */
+body {
+  background-image: url("assets/IMG_6608 4.jpg");
+  background-size: cover;
+  max-height: 50vh;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imports Noto Nastaliq Urdu */
+.noto-nastaliq-urdu-urdu1 {
+  font-family: "Noto Nastaliq Urdu", serif;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  font-style: normal;
+}
+
+/* Main Flex Container */
+.container {
+  padding: 0;
+  max-width: 100vw;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Flex Children - individual signs */
+.item {
+  background-color: rgb(212, 254, 128);
+  width: 100vw;
+  height: 300px;
+  border-collapse: collapse;
+  border: 7px solid;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* Sizes all Sign Titles (both urdu + roman urdu)*/
+.item h1 {
+  font-size: 40px;
+  font-family: Noto Nastaliq Urdu;
+  margin-top: 2rem;
+}
+
+.item h2 {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
+
+/* Lalazar Orange */
+.orange {
+  background-color: orange;
+}
+
+.blue {
+  background-color: lightsteelblue;
+}
+
+.dark-blue {
+  background-color: rgb(67, 67, 255);
+}
+
+.white-font {
+  color: white;
+}
+/* SVG Karachi Port*/
+.relative {
+  position: relative;
+  top: 15px;
+  left: -105px;
+}
+.relative-second {
+  position: relative;
+  top: 15px;
+  left: -105px;
+}
+
+/* max-width = desktop first */
+/* min-width = mobile first */
+
+@media screen and (min-width: 1100px) {
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  .relative {
+    position: relative;
+    top: 10px;
+    left: -130px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .container {
+    margin: 20px auto;
+    transition: margin 1s;
+  }
+  .item h1 {
+    font-size: 200%;
+    margin-top: 3rem;
+    transition: font-size 1s ease;
+  }
+  .relative {
+    position: relative;
+    top: 10px;
+    left: -107px;
+    /* transition: 1s ease; */
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  /* body {
+    background-image: none;
+    background-color: green;
+  } */
+  .item {
+    width: 100vw;
+    height: 272px;
+  }
+  .item h1 {
+    font-size: 200%;
+    margin-top: 1rem;
+    /* transition: 1s; */
+  }
+  .item h2 {
+    font-size: 150%;
+    margin-top: 2rem;
+    transition: 1s;
+  }
+  .relative {
+    position: relative;
+    top: -1px;
+    left: -75px;
+  }
+  svg {
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  /* body {
+    background-image: none;
+  } */
+  .item h1 {
+    font-size: 150%;
+  }
+  .item h2 {
+    font-size: 125%;
+  }
+  .relative {
+    position: relative;
+    top: 10px;
+    left: -65px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    overflow-y: scroll;
+    max-height: 100%;
+  }
+  .container {
+    margin: 4.5rem 8rem;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    /* height: 250px; */
+
+    /* border-left: 10px solid black;
+    border-right: 10px solid black; */
+  }
+  /* .container {
+    width: 55vw;
+  } */
+  .item {
+    width: 55vw;
+  }
+  .item h1 {
+    font-size: 250%;
+    margin-top: 1rem;
+  }
+  .item h2 {
+    font-size: 200%;
+    margin-top: -1rem;
+  }
+  .relative {
+    position: relative;
+    top: 2px;
+    left: -180px;
+  }
+  svg {
+    margin-top: -1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    /* width: 65vw; */
+    margin: 4.5rem 8rem;
+  }
+  .item {
+    width: 55vw;
+  }
+  .item h1 {
+    font-size: 35px;
+  }
+  .item h2 {
+    font-size: 200%;
+    transition: 1s;
+    margin-top: 1rem;
+  }
+  svg {
+    width: 30px;
+    margin-top: -1rem;
+  }
+  .relative {
+    position: relative;
+    top: 10px;
+    left: -140px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    /* width: 75vw; */
+    margin: 4.5rem 8rem;
+  }
+  .item {
+    width: 60vw;
+  }
+  .relative {
+    position: relative;
+    top: 10px;
+    left: -110px;
+  }
+}
+
+/* ----- LALAZAR.HTML ----- */

@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+/* Keeps images within browser size */
+img {
+  max-width: 100%;
+}
+
+/* Main Navigation - fixed */
+.navigation {
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 10px 0px 0px 10px;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.navigation a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-size: 110%;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.navigation a:hover {
+  font-style: italic;
+}
+
+.main {
+  padding: 10px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.main h1 {
+  font-size: 85px;
+  font-family: Noto Nastaliq Urdu;
+}
+.main h2 {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.main p {
+  font-size: 20px;
+  max-width: 70vw;
+  font-family: monospace;
+}
+
+/* Informational Hover Box */
+.hover-container {
+  position: relative;
+  display: inline-block; /* Important for inline elements */
+}
+.hover-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 200px;
+  height: 90px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 80%;
+  padding: 7px 5px;
+  position: absolute;
+  z-index: 1;
+  top: 100%; /* Position below the container */
+  left: 50%;
+  margin-left: -60px; /* Center the box */
+  transition: opacity 0.3s;
+  font-style: italic;
+}
+.hover-container:hover {
+  cursor: cell;
+}
+.hover-container:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
+}
+/* Optional: Add arrow */
+.hover-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
