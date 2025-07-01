@@ -252,8 +252,6 @@ a {
   .relative {
     position: relative;
     top: 10px;
-    left: -110px;
+    left: -30%;
   }
 }
-
-/* ----- LALAZAR.HTML ----- */
