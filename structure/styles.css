@@ -263,9 +263,16 @@ a {
   }
   #paposh-arrow {
     position: relative;
-    top: 1px;
+    top: -2px;
   }
   .orange {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  #port-arrow {
+    position: relative;
+    top: 1rem;
+  }
+  .blue {
+    font-size: smaller;
   }
 }
