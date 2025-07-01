@@ -78,18 +78,6 @@ a {
 
 /* MEDIA QUERY FOR NAVBAR */
 
-/* Reduces size of NavBar at smaller screen */
-@media screen and (max-width: 650px) {
-  .navigation2 {
-    border: none;
-  }
-  .test-item {
-    font-size: 90%;
-    padding: 10px;
-    transition: font-size ease 1s;
-  }
-}
-
 .main {
   padding: 10px;
   margin-top: 1rem;
@@ -153,4 +141,18 @@ a {
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent black transparent;
+}
+/* Reduces size of NavBar at smaller screen */
+@media screen and (max-width: 650px) {
+  .navigation2 {
+    border: none;
+  }
+  .test-item {
+    font-size: 90%;
+    padding: 10px;
+    transition: font-size ease 1s;
+  }
+  .main p {
+    max-width: 80vw;
+  }
 }
