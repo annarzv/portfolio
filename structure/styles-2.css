@@ -142,7 +142,7 @@ a {
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
-/* Reduces size of NavBar at smaller screen */
+/* Reduces size of NavBar at smaller screen, Changes main text to be wider in viewport */
 @media screen and (max-width: 650px) {
   .navigation2 {
     border: none;

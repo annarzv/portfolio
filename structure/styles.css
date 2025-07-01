@@ -1,4 +1,9 @@
-/* First Styles page */
+/* --- First Styles page ---- 
+
+Includes home page styling, font imports, SVG arrow styling
+
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -15,12 +20,14 @@ body {
 /* img {
   max-width: 100%;
 } */
+
 body {
   background-image: url("assets/IMG_6608 4.jpg");
   background-size: cover;
   max-height: 50vh;
   background-repeat: no-repeat;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -253,5 +260,9 @@ a {
     position: relative;
     top: 10px;
     left: -30%;
+  }
+  #paposh-arrow {
+    position: relative;
+    top: -2px;
   }
 }
