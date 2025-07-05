@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgb(48, 86, 156);
+}
+/* Applies jQuery Dark Mode */
+body.dark {
+  background-color: rgb(0, 0, 71);
+  background-image: url("assets/twinkle.gif");
+}
+/* Button Class */
+.buttons {
+  text-align: right;
+}
+
+/* Individual button styling */
+button {
+  cursor: pointer;
+  font-family: monospace;
+  background-color: yellow;
+  border: 2px solid black;
+  margin: 10px;
+  padding: 7px 10px;
+}
+/* Dark mode Button */
+button.dark {
+  background-color: white;
+  border: 2px solid yellow;
+}
+
+/* Keeps images within browser size */
+img {
+  max-width: 100%;
+}
+/* Cloud Class */
+.cloud {
+  margin: 10rem auto;
+}
+
+/* Top cloud - Drifting */
+#cloud-1 {
+  height: 30vw;
+  position: fixed;
+  left: 15px;
+  top: 10px;
+  animation: drift 25s infinite ease-in-out;
+  z-index: -1;
+}
+/* Middle Cloud - Tilt */
+#cloud-5 {
+  height: 50vw;
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  animation: tilt-2 16s infinite ease-in-out;
+  /* background-color: yellow; */
+}
+
+/* Bottom Cloud - Tilt */
+#cloud-3 {
+  height: 40vw;
+  position: fixed;
+  top: 400px;
+  right: 50px;
+  animation: tilt 15s infinite ease-in-out;
+}
+
+/* Drifitng Keyframe */
+@keyframes drift {
+  0% {
+    left: -50%;
+  }
+
+  20% {
+    transform: scale(2);
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+/* Tilting cloud - left */
+@keyframes tilt-1 {
+  0% {
+    transform: rotate(0deg); /* Start with no tilt */
+  }
+  25% {
+    transform: rotate(-3deg); /* Tilt slightly left */
+  }
+  75% {
+    transform: rotate(3deg); /* Tilt slightly right */
+  }
+  100% {
+    transform: rotate(0deg); /* Return to no tilt, completing the cycle */
+  }
+}
+/* Tilting cloud - right */
+@keyframes tilt-2 {
+  0% {
+    transform: rotate(0deg); /* Start with no tilt */
+  }
+  25% {
+    transform: rotate(3deg); /* Tilt slightly left */
+  }
+  75% {
+    transform: rotate(-3deg); /* Tilt slightly right */
+  }
+  100% {
+    transform: rotate(0deg); /* Return to no tilt, completing the cycle */
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* Top Cloud */
+  #cloud-1 {
+    top: 70px;
+  }
+  /* Middle Cloud */
+  #cloud-3 {
+    /* background-color: yellow; */
+    height: 65vh;
+    width: 100vw;
+    top: 330px;
+    left: 60px;
+    transition: height 2s;
+  }
+  /* Bottom Cloud */
+  #cloud-5 {
+    height: 50vh;
+    top: 150px;
+    transition: height 2s;
+  }
+}
