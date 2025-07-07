@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 body {
   margin: 0;
   overflow-x: hidden;
@@ -44,40 +47,105 @@ img {
 
 /* Top cloud - Drifting */
 #cloud-1 {
-  height: 30vw;
+  height: 15vw;
   position: fixed;
   left: 15px;
-  top: 10px;
-  animation: drift 25s infinite ease-in-out;
+  top: 40px;
+  animation: drift 60s infinite ease-in-out;
   z-index: -1;
 }
 /* Middle Cloud - Tilt */
 #cloud-5 {
-  height: 50vw;
+  height: 20vw;
   position: fixed;
-  top: 100px;
-  left: 0px;
-  animation: tilt-2 16s infinite ease-in-out;
+  top: 300px;
+  left: 70px;
+  animation: tilt-1 16s infinite ease-in-out;
+  /* background-color: yellow; */
+}
+#cloud-2 {
+  position: fixed;
+  left: 60px;
+  animation: tilt-2 10s infinite;
   /* background-color: yellow; */
 }
 
 /* Bottom Cloud - Tilt */
 #cloud-3 {
-  height: 40vw;
+  height: 35vw;
   position: fixed;
-  top: 400px;
+  bottom: 0px;
   right: 50px;
-  animation: tilt 15s infinite ease-in-out;
+  animation: tilt-2 15s infinite ease-in-out;
 }
 
+#cloud-4 {
+  position: fixed;
+  right: 60px;
+  z-index: -10;
+  animation: tilt-1 10s infinite;
+  /* background-color: yellow; */
+}
+#cloud-6 {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  animation: tilt-1 10s infinite;
+}
+
+/* Moon styling */
+.moon {
+  display: none;
+  height: 10vh;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  z-index: -11;
+}
+.moon.dark {
+  display: block;
+}
+/* Styles Sun */
+.sun {
+  height: 25vh;
+  position: fixed;
+  top: 50px;
+  left: 70px;
+  z-index: -11;
+}
+/* Adds class "dark" which shows the sun */
+.sun.dark {
+  display: none;
+}
+
+/* .show {
+  display: block;
+} */
+/* Styles the size of small clouds */
+.small-cloud {
+  height: 10vw;
+  z-index: -10;
+}
+
+.birds {
+  height: 20vh;
+  position: fixed;
+  right: 100px;
+  bottom: 300px;
+  animation: birds 20s infinite ease-in;
+}
+/* Hides birds in dark mode */
+.birds.dark {
+  display: none;
+}
 /* Drifitng Keyframe */
 @keyframes drift {
   0% {
-    left: -50%;
+    left: -21%;
   }
 
-  20% {
-    transform: scale(2);
+  50% {
+    transform: scale(1.5);
   }
 
   100% {
@@ -116,24 +184,70 @@ img {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@keyframes slow-drift {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes birds {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
   /* Top Cloud */
   #cloud-1 {
-    top: 70px;
+    top: 50px;
+    width: 50vw;
+    height: auto;
+    transition: width 1s;
   }
   /* Middle Cloud */
   #cloud-3 {
     /* background-color: yellow; */
-    height: 65vh;
-    width: 100vw;
-    top: 330px;
-    left: 60px;
-    transition: height 2s;
+    width: 68vw;
+    height: auto;
+    top: 400px;
+    left: 100px;
+    transition: width 1s;
   }
   /* Bottom Cloud */
   #cloud-5 {
-    height: 50vh;
-    top: 150px;
-    transition: height 2s;
+    width: 40vw;
+    height: auto;
+    left: 25px;
+    top: 260px;
+    transition: width 1s, left 1s;
+  }
+
+  /* Styles General small clouds */
+  .small-cloud {
+    width: 25vw;
+    height: auto;
+    transition: width 1s;
+  }
+  #cloud-6 {
+    left: 30px;
+    transition: width 1s, left 1s;
+  }
+  .sun {
+    height: 15vh;
+    width: auto;
+    top: 45px;
+    transition: top 2s;
+  }
+  .moon {
+    height: 10vh;
+    top: 70px;
+    left: 80px;
+    transition: top 1s, left 1s;
   }
 }
