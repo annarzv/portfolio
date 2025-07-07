@@ -1,10 +1,10 @@
 * {
   box-sizing: border-box;
 }
-a {
+/* a {
   text-decoration: none;
   color: inherit;
-}
+} */
 body {
   margin: 0;
   overflow-x: hidden;
@@ -29,6 +29,7 @@ button {
   border: 2px solid black;
   margin: 10px;
   padding: 7px 10px;
+  color: black;
 }
 /* Dark mode Button */
 button.dark {
@@ -56,10 +57,10 @@ img {
 }
 /* Middle Cloud - Tilt */
 #cloud-5 {
-  height: 20vw;
+  height: 25vw;
   position: fixed;
-  top: 300px;
-  left: 70px;
+  top: 240px;
+  left: 100px;
   animation: tilt-1 16s infinite ease-in-out;
   /* background-color: yellow; */
 }
@@ -74,7 +75,7 @@ img {
 #cloud-3 {
   height: 35vw;
   position: fixed;
-  bottom: 0px;
+  bottom: -20px;
   right: 50px;
   animation: tilt-2 15s infinite ease-in-out;
 }
@@ -83,14 +84,14 @@ img {
   position: fixed;
   right: 60px;
   z-index: -10;
-  animation: tilt-1 10s infinite;
+  animation: tilt-1 10s infinite, scale 10s infinite ease-in-out;
   /* background-color: yellow; */
 }
 #cloud-6 {
   position: fixed;
   bottom: 50px;
   left: 50px;
-  animation: tilt-1 10s infinite;
+  animation: tilt-1 10s infinite, scale 10s infinite ease-in-out;
 }
 
 /* Moon styling */
@@ -128,6 +129,7 @@ img {
 }
 
 .birds {
+  z-index: -100;
   height: 20vh;
   position: fixed;
   right: 100px;
@@ -184,15 +186,28 @@ img {
   }
 }
 
-@keyframes slow-drift {
+/* @keyframes slow-drift {
   0% {
     left: -50%;
   }
   100% {
     left: 100%;
   }
-}
+} */
 
+/* Small clouds scaling slightly up & down */
+@keyframes scale {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.2); /* Scale up by 20% */
+  }
+  100% {
+    transform: scale(1); /* Back to original size, seamless loop */
+  }
+}
+/* Birds flying across */
 @keyframes birds {
   0% {
     right: -50%;
@@ -202,10 +217,97 @@ img {
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  /* Top Cloud */
+  #cloud-1 {
+    top: 30px;
+    width: 40vw;
+    height: auto;
+    transition: width 1s;
+  }
+  #cloud-5 {
+    width: 40vw;
+    height: auto;
+    left: 50px;
+    top: 240px;
+    transition: width 1s, left 1s;
+  }
+  #cloud-3 {
+    width: 55vw;
+    height: auto;
+    top: 360px;
+    left: 400px;
+    transition: width 1s;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  /* Top Cloud */
+  #cloud-1 {
+    top: 30px;
+    width: 40vw;
+    height: auto;
+    transition: width 1s;
+  }
+  #cloud-5 {
+    width: 45vw;
+    height: auto;
+    left: 60px;
+    top: 240px;
+    transition: width 1s, left 1s;
+  }
+  #cloud-3 {
+    width: 60vw;
+    height: auto;
+    top: 380px;
+    left: 330px;
+    transition: width 1s;
+  }
+  .small-cloud {
+    width: 20vw;
+    height: auto;
+    transition: width 1s;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #cloud-1 {
+    top: 30px;
+    width: 40vw;
+    height: auto;
+    transition: width 1s;
+  }
+  #cloud-5 {
+    width: 55vw;
+    height: auto;
+    left: 20px;
+    transition: width 1s, left 1s;
+  }
+  #cloud-3 {
+    width: 65vw;
+    height: auto;
+    top: 420px;
+    left: 250px;
+    transition: width 1s;
+  }
+  #cloud-6 {
+    width: 20vw;
+    bottom: 10px;
+    left: 30px;
+    transition: width 1s, left 1s;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #cloud-3 {
+    left: 230px;
+    transition: left 1s;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   /* Top Cloud */
   #cloud-1 {
-    top: 50px;
+    top: 60px;
     width: 50vw;
     height: auto;
     transition: width 1s;
@@ -213,39 +315,47 @@ img {
   /* Middle Cloud */
   #cloud-3 {
     /* background-color: yellow; */
-    width: 68vw;
+    width: 85vw;
     height: auto;
-    top: 400px;
-    left: 100px;
+    top: 420px;
+    left: 70px;
     transition: width 1s;
   }
   /* Bottom Cloud */
   #cloud-5 {
-    width: 40vw;
+    width: 65vw;
     height: auto;
-    left: 25px;
+    left: 10px;
     top: 260px;
     transition: width 1s, left 1s;
   }
-
   /* Styles General small clouds */
   .small-cloud {
     width: 25vw;
     height: auto;
     transition: width 1s;
   }
+  #cloud-4 {
+    width: 30vw;
+    height: auto;
+    top: 190px;
+    transition: width 1s;
+  }
   #cloud-6 {
+    width: 25vw;
+    height: auto;
+    bottom: 20px;
     left: 30px;
     transition: width 1s, left 1s;
   }
   .sun {
-    height: 15vh;
+    height: 12vh;
     width: auto;
     top: 45px;
     transition: top 2s;
   }
   .moon {
-    height: 10vh;
+    height: 7vh;
     top: 70px;
     left: 80px;
     transition: top 1s, left 1s;
