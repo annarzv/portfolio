@@ -9,6 +9,10 @@ img {
 a {
   text-decoration: none;
 }
+/* body {
+  max-width: 100vw;
+  overflow-x: hidden;
+} */
 
 /* Main Navigation - fixed */
 .navigation {
@@ -45,6 +49,7 @@ a {
   justify-content: left;
   position: fixed;
   border: 2px solid;
+  flex-wrap: wrap;
 }
 .test-item {
   border: 4px solid black;
