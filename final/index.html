@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>heirlooms</title>
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="png"
+            href="assets /tomato.png"
+            alt="tomato graphic"
+        >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="jquery-ui.min.css">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            /* Zain Font */
+            @import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+        </style>
+    </head>
+    <body>
+        <!-- Main Layout Container for Two Columns -->
+        <div class="main-container">
+            <!-- Tomato png that links to home -->
+            <nav>
+                <a href="#">
+                    <img src="assets /tomato.png" class="logo">
+                </a>
+            </nav>
+            <!-- Left Column: Ingredients and Pot -->
+            <div class="left-column">
+                <!-- Contaienr for Ingredients -->
+                <div class="ingredients-container">
+                    <!-- Ingredient items -->
+                    <div id="water" class="ui-widget-content ingredient-item">
+                        <p>1a</p>
+                        <img src="assets /water.png">
+                    </div>
+                    <div id="yellow" class="ui-widget-content ingredient-item">
+                        <p>1b</p>
+                        <img src="assets /yellow-daal.png">
+                    </div>
+                    <div id="red" class="ui-widget-content ingredient-item">
+                        <p>1c</p>
+                        <img src="assets /red-daal.png">
+                    </div>
+                    <div id="spices" class="ui-widget-content ingredient-item">
+                        <p>2a</p>
+                        <img src="assets /spices.png">
+                    </div>
+                    <div id="garlic" class="ui-widget-content ingredient-item">
+                        <p>2b</p>
+                        <img src="assets /Garlic.png">
+                    </div>
+                    <div id="timer" class="ui-widget-content ingredient-item">
+                        <p>3</p>
+                        <img src="assets /timer.jpg">
+                    </div>
+                    <div id="baghaar" class="ui-widget-content ingredient-item">
+                        <p>4</p>
+                        <img src="assets /Tadka.png">
+                    </div>
+                    <!-- ingredient items go here -->
+                </div>
+                <!-- Cooking Pot -->
+                <div id="droppable" class="ui-widget-header">
+                    <!-- Pot IMG -->
+                    <img id="potImage" src="assets /patila2.png" alt="Cooking Pot">
+                    <!-- Ingredient images after dropping them into the Pot -->
+                    <img
+                        id="waterInPot"
+                        src="assets /water-output.png"
+                        alt="Water in Pot"
+                        class="dropped-ingredient-img"
+                        style="display: none;"
+                    >
+                    <img
+                        id="yellowInPot"
+                        src="assets /yellow-output.png"
+                        alt="Yellow Daal in Pot"
+                        class="dropped-ingredient-img"
+                        style="display: none;"
+                    >
+                    <img
+                        id="redInPot"
+                        src="assets /red-output-2.png"
+                        alt="Red Daal in Pot"
+                        class="dropped-ingredient-img"
+                        style="display: none;"
+                    >
+                    <img
+                        id="spicesInPot"
+                        src="assets /spices-output.png"
+                        alt="Spices in Pot"
+                        class="dropped-ingredient-img"
+                        style="display: none;"
+                    >
+                    <img
+                        id="garlicInPot"
+                        src="assets /garlic-output.png"
+                        alt="Garlic in Pot"
+                        class="dropped-ingredient-img"
+                        style="display: none;"
+                    >
+                    <img
+                        id="timerInPot"
+                        src="assets /timer-output.png"
+                        alt="Timer in Pot"
+                        class="dropped-ingredient-img"
+                        style="display: none;"
+                    >
+                </div>
+            </div>
+            <!-- Right Column: Recipe Text -->
+            <div class="right-column">
+                <h2 class="zain-extrabold">baby's yellow daal</h2>
+                <p>Start off by rinsing your daal, always! then ...</p>
+                <p>1. Add water and lentils to the pot on medium heat</p>
+                <p>2. Add salt, a pinch of haldi (turmeric), & laal mirch (red pepper flakes). Stir stir stir</p>
+                <p>3. After a very long time (1hr-ish), add a tomato or two. This will eventually dissolve and become one with the daal. It adds a nice tang and texture to the experience. Stir stir stir</p>
+                <p>
+                    4. You're daal is almost ready! Add your
+                    <i>baghaar</i>
+                    & cover the pot so that all the flavors can get acquainted with one another.
+                </p>
+                <p>
+                    Baghaar (tempering) is my favorite part about daal. I've created a recipe for
+                    <a href="#">my mum's method</a>
+                    - feel free to check it out :-)
+                </p>
+                <p>Enjoy with rice, roti / naan, or as is!</p>
+            </div>
+        </div>
+        <!-- Still Hungry Refresh Btn -->
+        <button id="stillHungryBtn">make more :D</button>
+        <!-- IMPORTING JS + JQUERY FILES BELOW -->
+        <!-- General jQuery file -->
+        <script src="jquery-3.7.1.min.js"></script>
+        <!-- jQuery UI file -->
+        <script src="jquery-ui.min.js"></script>
+        <!-- My JS file -->
+        <script src="main.js"></script>
+    </body>
+</html>
