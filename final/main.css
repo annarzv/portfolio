@@ -147,8 +147,8 @@ body {
   left: -10rem;
 }
 
-/* General Styling for dropped ingredient images */
-.dropped-ingredient-img {
+/* General Styling for dropped ingredients IN pot */
+.dropped-ingredient {
   height: auto;
   position: absolute;
   z-index: 20;
@@ -199,6 +199,14 @@ body {
 
 /* Timer IN pot - almost final output of no water & more yellow */
 #timerInPot {
+  width: 74%;
+  height: auto;
+  top: 3.9rem;
+  left: -6rem;
+  z-index: 19;
+}
+/* Tadka IN Pot - Final Daal IMG */
+#tadkaInPot {
   width: 74%;
   height: auto;
   top: 3.9rem;

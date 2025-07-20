@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>heirlooms</title>
-        <!-- Favicon -->
+        <!-- Tomato Favicon -->
         <link
             rel="icon"
             type="png"
@@ -26,86 +26,99 @@
                     <img src="assets /tomato.png" class="logo">
                 </a>
             </nav>
-            <!-- Left Column: Ingredients and Pot -->
+            <!-- Left Column : Ingredients and Pot -->
             <div class="left-column">
                 <!-- Contaienr for Ingredients -->
                 <div class="ingredients-container">
-                    <!-- Ingredient items -->
+                    <!-- Individual Ingredient -->
+                    <!-- Water -->
                     <div id="water" class="ui-widget-content ingredient-item">
                         <p>1a</p>
                         <img src="assets /water.png">
                     </div>
+                    <!-- Yellow Daal -->
                     <div id="yellow" class="ui-widget-content ingredient-item">
                         <p>1b</p>
                         <img src="assets /yellow-daal.png">
                     </div>
+                    <!-- Red Daal -->
                     <div id="red" class="ui-widget-content ingredient-item">
                         <p>1c</p>
                         <img src="assets /red-daal.png">
                     </div>
+                    <!-- Spices : Haldi, Red Pepper, Salt -->
                     <div id="spices" class="ui-widget-content ingredient-item">
                         <p>2a</p>
                         <img src="assets /spices.png">
                     </div>
+                    <!-- Garlic -->
                     <div id="garlic" class="ui-widget-content ingredient-item">
                         <p>2b</p>
                         <img src="assets /Garlic.png">
                     </div>
+                    <!-- Timer -->
                     <div id="timer" class="ui-widget-content ingredient-item">
                         <p>3</p>
                         <img src="assets /timer.jpg">
                     </div>
-                    <div id="baghaar" class="ui-widget-content ingredient-item">
+                    <!-- Tadka Pan -->
+                    <div id="tadka" class="ui-widget-content ingredient-item">
                         <p>4</p>
                         <img src="assets /Tadka.png">
                     </div>
-                    <!-- ingredient items go here -->
                 </div>
-                <!-- Cooking Pot -->
+                <!-- Cooking Pot where ingredients are dropped -->
                 <div id="droppable" class="ui-widget-header">
                     <!-- Pot IMG -->
                     <img id="potImage" src="assets /patila2.png" alt="Cooking Pot">
-                    <!-- Ingredient images after dropping them into the Pot -->
+                    <!-- Ingredient illustrations dropped IN Pot -->
                     <img
                         id="waterInPot"
                         src="assets /water-output.png"
                         alt="Water in Pot"
-                        class="dropped-ingredient-img"
+                        class="dropped-ingredient"
                         style="display: none;"
                     >
                     <img
                         id="yellowInPot"
                         src="assets /yellow-output.png"
                         alt="Yellow Daal in Pot"
-                        class="dropped-ingredient-img"
+                        class="dropped-ingredient"
                         style="display: none;"
                     >
                     <img
                         id="redInPot"
                         src="assets /red-output-2.png"
                         alt="Red Daal in Pot"
-                        class="dropped-ingredient-img"
+                        class="dropped-ingredient"
                         style="display: none;"
                     >
                     <img
                         id="spicesInPot"
                         src="assets /spices-output.png"
                         alt="Spices in Pot"
-                        class="dropped-ingredient-img"
+                        class="dropped-ingredient"
                         style="display: none;"
                     >
                     <img
                         id="garlicInPot"
                         src="assets /garlic-output.png"
                         alt="Garlic in Pot"
-                        class="dropped-ingredient-img"
+                        class="dropped-ingredient"
                         style="display: none;"
                     >
                     <img
                         id="timerInPot"
                         src="assets /timer-output.png"
                         alt="Timer in Pot"
-                        class="dropped-ingredient-img"
+                        class="dropped-ingredient"
+                        style="display: none;"
+                    >
+                    <img
+                        id="tadkaInPot"
+                        src="assets /tadka-output.png"
+                        alt="Tadka in Pot"
+                        class="dropped-ingredient"
                         style="display: none;"
                     >
                 </div>
@@ -130,7 +143,7 @@
                 <p>Enjoy with rice, roti / naan, or as is!</p>
             </div>
         </div>
-        <!-- Still Hungry Refresh Btn -->
+        <!-- Make More Button -->
         <button id="stillHungryBtn">make more :D</button>
         <!-- IMPORTING JS + JQUERY FILES BELOW -->
         <!-- General jQuery file -->
