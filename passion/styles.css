@@ -245,6 +245,7 @@ li {
   } */
   .hover-text {
     width: 90px;
-    height: 100px;
+    height: 110px;
+    background-color: #f6f6ec;
   }
 }
