@@ -109,7 +109,7 @@ a {
 /* Informational Hover Box */
 .hover-container {
   position: relative;
-  display: inline-block; /* Important for inline elements */
+  display: inline-block;
 }
 .hover-text {
   visibility: hidden;

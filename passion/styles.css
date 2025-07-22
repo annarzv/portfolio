@@ -1,17 +1,28 @@
+/* Importing 'Anthony' Font */
+@font-face {
+  font-family: anthony;
+  src: url(media/fonts/web/Anthony.woff2);
+}
+
+body {
+  background-color: #f6f6ec;
+}
 /* Doors title */
 h1 {
-  font-size: 60px;
+  font-size: 75px;
+  font-family: anthony;
 }
+/* h1:hover {
+  rotate: -5deg;
+} */
 
 /* Secondary title */
 h4 {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* Line Break */
 hr {
-  margin-left: 34%;
-  margin-right: 34%;
   border: 1px dotted blue;
 }
 
@@ -25,13 +36,44 @@ hr {
 
 /* Main paragraphs about doors */
 .paragraphs {
+  /* margin: 0 17rem; */
   text-align: justify;
   font-family: monospace;
   font-size: 15px;
-  padding: 1rem;
-  margin-left: 33%;
-  margin-right: 33%;
+  padding: 2rem;
   color: blue;
+  /* background-color: yellow; */
+}
+
+/* Hover Text for Font Credits */
+.hover-container {
+  display: inline-block;
+}
+.hover-text {
+  visibility: hidden;
+  width: 100px;
+  height: 100px;
+  border-right: 1px solid blue;
+  border-bottom: 10px double blue;
+  color: blue;
+  text-align: left;
+  font-size: 99%;
+  padding: 15px 15px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s;
+  font-style: italic;
+  font-weight: bold;
+  font-family: anthony;
+  font-weight: bold;
+}
+.hover-container:hover {
+  cursor: cell;
+}
+.hover-container:hover .hover-text {
+  visibility: visible;
 }
 
 /* ------ Photos Begin ------- */
@@ -41,6 +83,11 @@ img {
   height: auto;
   height: 400px;
 }
+img:hover {
+  transform: scale(1.5);
+  transition: 0.5s ease-in-out;
+  cursor: zoom-in;
+}
 
 /* Photo gallery container */
 .photos-container {
@@ -49,36 +96,155 @@ img {
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  margin-left: 6.5rem;
+  margin-right: 6.5rem;
 }
 /* Dropdown list (in this country, not in this country) */
 summary {
-  /* background-color: rgb(207, 221, 255); */
   border: 1px dotted blue;
   padding: 12px;
-  font-family: monospace;
-  font-size: 15px;
+  font-family: anthony;
+  font-size: 20px;
   margin-top: 2%;
   margin-bottom: 1%;
-  margin-left: 6.5rem;
-  margin-right: 6.5rem;
+  /* margin-left: 6.5rem;
+  margin-right: 6.5rem; */
   font-weight: bold;
   color: blue;
 }
+/* Adds lightblue background to summaries on hover */
 summary:hover {
   cursor: cell;
   background-color: rgb(207, 221, 255);
 }
+/* Keeps Summary Tabs lightblue when open/active */
+details[open] summary {
+  background-color: rgb(207, 221, 255);
+}
+
+.ul-container {
+  display: flex;
+}
 
 ul {
-  list-style-type: circle;
-  text-align: left;
+  /* list-style-type: circle; */
+  text-align: center;
   font-family: monospace;
   font-size: 15px;
   padding: 1rem;
-  margin-left: 40%;
-  margin-right: 33%;
   color: blue;
+  margin: 0 auto;
+  line-height: 2;
+  /* background-color: yellow; */
 }
 li {
   margin-top: 5%;
+  /* background-color: aqua; */
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1201px) {
+  .paragraphs {
+    margin: 0 23rem;
+    /* background-color: rgb(0, 157, 255); */
+  }
+  hr {
+    margin: 0 25rem;
+  }
+  /* ul {
+    margin: 20px 30rem;
+  } */
+}
+
+@media screen and (max-width: 1200px) {
+  .paragraphs {
+    margin: 0 17rem;
+    /* background-color: yellow; */
+  }
+  hr {
+    margin: 0 19rem;
+  }
+  /* ul {
+    margin: 0 25rem;
+    background-color: yellow;
+  } */
+}
+
+@media screen and (max-width: 1000px) {
+  .paragraphs {
+    margin: 0 13rem;
+    /* background-color: rgb(0, 255, 191); */
+  }
+  hr {
+    margin: 0 15rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .paragraphs {
+    margin: 0 11rem;
+    /* background-color: rgb(17, 255, 0); */
+  }
+  hr {
+    margin: 0 13rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .paragraphs {
+    margin: 0 9rem;
+    font-size: 130%;
+    /* background-color: rgb(255, 0, 195); */
+  }
+  hr {
+    margin: 0 11rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .paragraphs {
+    margin: 0 7rem;
+    /* background-color: rgb(224, 180, 214); */
+  }
+  hr {
+    margin: 0 9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .paragraphs {
+    margin: 0 4rem;
+    font-size: 140%;
+    /* background-color: rgb(213, 224, 180); */
+  }
+  hr {
+    margin: 0 6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 6em;
+    transition: font-size 0.5s;
+  }
+  h4 {
+    font-size: 110%;
+    transition: font-size 0.5s;
+  }
+  .paragraphs {
+    margin: 0 2rem;
+    /* background-color: rgb(188, 224, 180); */
+  }
+  hr {
+    margin: 0 4rem;
+  }
+  /* summary {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  } */
+  .hover-text {
+    width: 90px;
+    height: 90px;
+  }
 }
