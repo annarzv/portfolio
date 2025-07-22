@@ -221,6 +221,10 @@ li {
   hr {
     margin: 0 6rem;
   }
+  /* Allows for photos to not be compressed */
+  .photos-container {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 500px) {
