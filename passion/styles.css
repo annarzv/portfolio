@@ -19,6 +19,8 @@ h1 {
 /* Secondary title */
 h4 {
   font-size: 13px;
+  /* background-color: aqua; */
+  margin-bottom: -1rem;
 }
 
 /* Line Break */
@@ -29,9 +31,10 @@ hr {
 /* Doors & Secondary Container */
 .titles {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   color: blue;
   font-family: monospace;
+  /* background-color: yellow; */
 }
 
 /* Main paragraphs about doors */
@@ -118,9 +121,10 @@ img:hover {
   flex-wrap: wrap;
   margin-left: 6.5rem;
   margin-right: 6.5rem;
+  margin-top: 1rem;
 }
 details {
-  margin-bottom: 5%;
+  margin-bottom: 1rem;
 }
 /* Dropdown list (in this country, not in this country) */
 summary {
@@ -128,8 +132,7 @@ summary {
   padding: 12px;
   font-family: anthony;
   font-size: 20px;
-  margin-top: 2%;
-  margin-bottom: 1%;
+  /* margin-top: 2%; */
   font-weight: bold;
   color: blue;
 }
