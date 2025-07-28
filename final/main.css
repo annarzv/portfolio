@@ -111,6 +111,7 @@ body {
   align-items: center;
   border: none;
   background-color: transparent;
+  z-index: 999;
 }
 /* Adds fun tilt to ingredients on hover */
 .ingredient-item:hover {

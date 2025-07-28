@@ -67,7 +67,6 @@ hr {
   font-style: italic;
   font-weight: bold;
   font-family: anthony;
-  font-weight: bold;
 }
 .hover-container:hover {
   cursor: cell;
@@ -79,8 +78,8 @@ hr {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 40px;
+  right: 40px;
   z-index: 99;
   font-size: 18px;
   background-color: blue;
@@ -91,7 +90,6 @@ hr {
   border-radius: 5px;
   font-family: monospace;
 }
-
 #myBtn:hover {
   background-color: rgb(207, 221, 255);
   color: blue;
@@ -121,6 +119,9 @@ img:hover {
   margin-left: 6.5rem;
   margin-right: 6.5rem;
 }
+details {
+  margin-bottom: 5%;
+}
 /* Dropdown list (in this country, not in this country) */
 summary {
   border: 1px dotted blue;
@@ -129,8 +130,6 @@ summary {
   font-size: 20px;
   margin-top: 2%;
   margin-bottom: 1%;
-  /* margin-left: 6.5rem;
-  margin-right: 6.5rem; */
   font-weight: bold;
   color: blue;
 }
