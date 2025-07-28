@@ -78,8 +78,8 @@ hr {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 60px;
+  right: 60px;
   z-index: 99;
   font-size: 18px;
   background-color: blue;
