@@ -12,8 +12,9 @@ body {
 }
 /* Doors title */
 h1 {
-  font-size: 75px;
+  font-size: 85px;
   font-family: anthony;
+  margin-bottom: 2.5rem;
 }
 
 /* Secondary title */
@@ -247,7 +248,8 @@ li {
   }
   /* Allows for photos to not be compressed */
   .photos-container {
-    margin: 0 auto;
+    margin: 1rem auto;
+    /* background-color: yellow; */
   }
   #myBtn:hover {
     background-color: blue;
@@ -272,10 +274,6 @@ li {
   hr {
     margin: 0 4rem;
   }
-  /* summary {
-    margin-left: 4rem;
-    margin-right: 4rem;
-  } */
   .hover-text {
     width: 90px;
     height: 110px;
