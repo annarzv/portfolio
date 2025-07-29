@@ -54,7 +54,7 @@
         <p class="paragraphs">
             This webpage is a collection of some my favorite doors. They are stories  that I was lucky enough to catch a glimpse of :-)
         </p>
-        <details>
+        <details class="scroll-on-open">
             <summary>not in the U.S.</summary>
             <div class="photos-container">
                 <div class="photos">
@@ -99,7 +99,7 @@
                 </div> -->
             </div>
         </details>
-        <details>
+        <details class="scroll-on-open">
             <summary>in the U.S.</summary>
             <div class="photos-container">
                 <div class="photos">
@@ -155,8 +155,7 @@
         </details>
         <script>
 
-            // Scroll to Top 
-
+            // Scroll to Top Function
             // Get the button
             let mybutton = document.getElementById("myBtn");
 
@@ -178,6 +177,23 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
             }
+
+            // ****************** // 
+            
+            // Scroll to start of photo gallery Function
+            document.addEventListener('DOMContentLoaded', () => {
+            const detailElements = document.querySelectorAll('.scroll-on-open');
+
+         detailElements.forEach(detail => {
+         detail.addEventListener('toggle', () => {
+        if (detail.open) { // Check if the details element is now open
+      detail.scrollIntoView({
+          block: 'start' // Scrolls the element to the top of the viewport
+        });
+      }
+    });
+  });
+});
         </script>
     </body>
 </html>
