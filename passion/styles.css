@@ -85,12 +85,12 @@ hr {
   bottom: 60px;
   right: 20px;
   z-index: 99;
-  font-size: 18px;
+  font-size: 25px;
   background-color: blue;
   border: none;
   color: #f6f6ec;
   cursor: pointer;
-  padding: 20px 20px;
+  padding: 12px 20px;
   border-radius: 100px;
   font-family: monospace;
 }
