@@ -85,20 +85,22 @@ hr {
   bottom: 60px;
   right: 20px;
   z-index: 99;
-  font-size: 25px;
-  background-color: blue;
+  height: 100px;
+  width: auto;
+  /* font-size: 25px; */
+  /* background-color: blue; */
   border: none;
   color: #f6f6ec;
   cursor: pointer;
-  padding: 12px 20px;
-  border-radius: 100px;
+  /* padding: 5px 5px; */
+  border-radius: none;
   font-family: monospace;
 }
-#myBtn:hover {
+/* #myBtn:hover {
   background-color: rgb(207, 221, 255);
   color: blue;
   border: 5px double blue;
-}
+} */
 
 /* ------ Photos Begin ------- */
 /* Responsive images + sets size of 400px for ALL */
@@ -107,11 +109,11 @@ img {
   height: auto;
   height: 400px;
 }
-img:hover {
+/* img:hover {
   transform: scale(1.5);
   transition: 0.5s ease-in-out;
   cursor: zoom-in;
-}
+} */
 
 /* Photo gallery container */
 .photos-container {
@@ -251,11 +253,11 @@ li {
     margin: 1rem auto;
     /* background-color: yellow; */
   }
-  #myBtn:hover {
+  /* #myBtn:hover {
     background-color: blue;
     color: white;
     border: none;
-  }
+  } */
 }
 
 @media screen and (max-width: 500px) {
