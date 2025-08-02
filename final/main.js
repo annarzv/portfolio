@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (waterItem) {
     // Apply basic positioning styles to the draggable item
-    waterItem.style.position = "absolute"; // Or 'relative' depending on your layout, but absolute is common for drag
+    // waterItem.style.position = 'absolute'; // Or 'relative' depending on your layout, but absolute is common for drag
     waterItem.style.cursor = "grab"; // Visual cue for desktop users
 
     waterItem.addEventListener("touchstart", dragStart);
