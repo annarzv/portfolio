@@ -6,6 +6,8 @@ img {
   max-width: 100%;
 }
 
+/*------ Home Page ------*/
+
 /* Zain Font */
 .zain-extrabold {
   font-family: "Zain", sans-serif;
@@ -13,15 +15,101 @@ img {
   font-style: normal;
 }
 
+/* Work Sans Font */
+.work-sans-font {
+  font-family: "Work Sans", monospace;
+  font-optical-sizing: auto;
+  font-weight: 297;
+  font-style: normal;
+}
+
+/* Main Header Container */
+.mainHeader {
+  text-align: center;
+  margin-top: 2rem;
+  /* background-color: lightblue; */
+}
+
+/* Tomato PNG */
+.mainTomato:hover {
+  transform: rotate(5deg);
+  cursor: pointer;
+}
+
+/* Heirlooms Title */
+.mainHeader h1 {
+  font-size: 40px;
+  margin: 0.5rem;
+  color: red;
+}
+
+/* Secondary Title */
+.mainHeader h3 {
+  font-family: "Work Sans";
+  margin-top: -0.5rem;
+  color: red;
+}
+
+/* Dishes Container */
+.parent {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  max-width: 100vw;
+  margin-top: 2rem;
+}
+
+.bottom-half {
+  border-top: 2px solid black;
+  height: 100vh;
+  margin-top: 2rem;
+  background-image: url(assets\ /6321.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* First Dish */
+.div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Second Dish */
+.div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+/* Third Dish */
+.div3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sepia on Hover of dishes */
+.div1:hover,
+.div2:hover,
+.div3:hover {
+  filter: sepia(60%);
+  cursor: pointer;
+  transition: 1s ease;
+}
+
 body {
-  overflow-y: hidden;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  max-height: 100vh;
   margin: 0;
 }
+
 /* Tomato Logo */
 .logo {
   width: auto;
@@ -134,9 +222,6 @@ body {
   max-width: 600px;
   width: 45vw;
   background-color: transparent;
-  /* height: auto;
-  display: flex;
-  margin-top: 10rem; */
 }
 
 /* Initial empty pot image */
@@ -231,10 +316,10 @@ body {
 @media screen and (max-width: 1350px) {
   #droppable {
     width: 50vw;
-    top: 12rem;
-    left: 12rem;
+    top: 15rem;
+    left: 11rem;
     transition: 0.5s;
-    background-color: blue;
+    /* background-color: blue; */
   }
   #redInPot {
     bottom: 65%;
@@ -248,28 +333,40 @@ body {
 @media screen and (max-width: 1250px) {
   #droppable {
     width: 50vw;
-    top: 14rem;
-    left: 12rem;
-    background-color: rgb(0, 255, 110);
+    top: 16rem;
+    left: 10rem;
+    /* background-color: rgb(0, 255, 110); */
   }
   #redInPot {
     bottom: 65%;
+  }
+  .parent {
+    margin-top: 4rem;
   }
 }
 
 @media screen and (max-width: 1150px) {
   #droppable {
     width: 50vw;
-    top: 14rem;
-    left: 11rem;
-    background-color: rgb(255, 225, 0);
+    top: 17rem;
+    left: 13rem;
+    /* background-color: rgb(255, 225, 0); */
   }
   #redInPot {
     bottom: 67%;
   }
   #yellowInPot {
-    top: 16%;
-    left: -7%;
+    /* left: -29%; */
+    bottom: 67%;
+  }
+  #timerInPot {
+    top: 8.9%;
+  }
+  #garlicInPot {
+    top: 18%;
+  }
+  #tadkaInPot {
+    top: 8.9%;
   }
 
   .ingredient-item {
@@ -294,18 +391,34 @@ body {
   }
 
   #droppable {
-    width: 50vw; /* Adjust pot container size */
+    width: 50vw;
     top: 20rem;
     left: 11rem;
-    background-color: rgb(255, 85, 0);
+    /* background-color: rgb(255, 85, 0); */
   }
-  #redInPot {
-    bottom: 70%;
-    width: 25%;
+  #garlicInPot {
+    top: 4.5rem;
   }
-  #yellowInPot {
-    top: 14%;
-    left: -10%;
+  #timerInPot {
+    top: 2.1rem;
+    left: -7rem;
+  }
+  #tadkaInPot {
+    top: 2rem;
+    left: -6.6rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #droppable {
+    width: 50vw;
+    top: 19rem;
+    left: 11rem;
+    /* background-color: rgb(255, 85, 0); */
+  }
+  #tadkaInPot {
+    top: 1.5rem;
+    left: -6.6rem;
   }
 }
 
@@ -318,33 +431,37 @@ body {
     width: 50vw;
     top: 13rem;
     left: 11rem;
-    background-color: rgb(0, 217, 255);
   }
   #redInPot {
     bottom: 85%;
     left: 110%;
   }
 }
-
 @media screen and (max-width: 851px) {
   .main-container {
     flex-direction: column;
     height: 50vh;
   }
-
   #droppable {
     width: 45vw;
     top: 9rem;
-    left: 37rem;
-    background-color: rgb(255, 0, 132);
+    left: 30rem;
+    /* background-color: rgb(255, 0, 132); */
   }
   #redInPot {
-    bottom: 78%;
-    left: 9%;
+    bottom: 88%;
+    left: -10rem;
   }
-  #yellowInPot {
-    top: 9%;
-    left: -17%;
+  #timerInPot {
+    top: 0.8rem;
+  }
+  #garlicInPot {
+    left: -4rem;
+    top: 2.5rem;
+  }
+  #tadkaInPot {
+    top: 0.5rem;
+    left: -7.5rem;
   }
   .right-column {
     border-top: 1px solid black;
@@ -362,16 +479,12 @@ body {
   #droppable {
     width: 45vw;
     top: 9rem;
-    left: 37rem;
-    background-color: rgb(195, 0, 255);
+    left: 30rem;
+    /* background-color: rgb(195, 0, 255); */
   }
-  #redInPot {
-    bottom: 82%;
-    left: 5%;
-  }
-  #yellowInPot {
-    top: 7%;
-    left: -22%;
+  #timerInPot {
+    top: 0.1rem;
+    left: -7.7rem;
   }
 }
 
@@ -380,32 +493,34 @@ body {
     width: 45vw;
     top: 11rem;
     left: 35rem;
-    background-color: rgb(0, 255, 4);
+    /* background-color: rgb(0, 255, 4); */
   }
-  #redInPot {
-    bottom: 84%;
-    left: 2%;
+  #tadkaInPot {
+    top: -0.1rem;
   }
-  #yellowInPot {
-    top: 5%;
-    left: -26%;
+  #garlicInPot {
+    top: 1.7rem;
   }
 }
 
 @media screen and (max-width: 700px) {
   #droppable {
     width: 45vw;
-    top: 12rem;
-    left: 32rem;
-    background-color: rgb(167, 223, 255);
+    top: 13rem;
+    left: 28rem;
+    /* background-color: rgb(167, 223, 255); */
   }
-  #redInPot {
-    bottom: 86%;
-    left: -3%;
+  #garlicInPot {
+    top: 1rem;
+    left: -5rem;
   }
-  #yellowInPot {
-    top: 3%;
-    left: -28%;
+  #timerInPot {
+    top: -0.6rem;
+    left: -8rem;
+  }
+  #tadkaInPot {
+    top: -0.6rem;
+    left: -7.9rem;
   }
 }
 
@@ -414,7 +529,7 @@ body {
     width: 45vw;
     top: 13rem;
     left: 32rem;
-    background-color: rgb(255, 167, 234);
+    /* background-color: rgb(255, 167, 234); */
   }
   #redInPot {
     bottom: 88%;
@@ -427,6 +542,41 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .mainTomato {
+    height: 50px;
+    transition: 1s ease;
+  }
+  .mainHeader h1 {
+    font-size: 320%;
+    transition: 1s ease;
+  }
+  .mainHeader h3 {
+    font-size: 130%;
+    transition: 1s ease;
+  }
+
+  .parent {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .div1,
+  .div2,
+  .div3 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .div2 {
+    padding: 1.3rem;
+  }
+
+  .parent img {
+    width: 40vw;
+  }
+
   .right-column h2 {
     font-size: 55px;
     transition: 0.5s ease;
@@ -436,7 +586,7 @@ body {
     transition: 0.5s ease;
   }
   .left-column {
-    flex: 2;
+    flex: 1.3;
   }
   #stillHungryBtn {
     left: 30px;
@@ -444,33 +594,53 @@ body {
   }
   #droppable {
     width: 45vw;
-    top: 16rem;
-    left: 31rem;
-    background-color: rgb(232, 255, 167);
+    top: 13rem;
+    left: 30rem;
+    /* background-color: rgb(232, 255, 167); */
   }
   #redInPot {
-    bottom: 91%;
-    left: -9%;
+    left: -60%;
   }
   #yellowInPot {
-    top: -1%;
-    left: -39%;
+    top: -20%;
+    left: -60%;
+  }
+  #garlicInPot {
+    top: 0.2rem;
+  }
+  #timerInPot {
+    top: -1.1rem;
+  }
+  #tadkaInPot {
+    top: -1.1rem;
   }
 }
 
 @media screen and (max-width: 550px) {
   #droppable {
     width: 45vw;
-    top: 19rem;
-    left: 27rem;
-    background-color: rgb(255, 220, 167);
-  }
-  #redInPot {
-    bottom: 94%;
-    left: -18%;
+    top: 16rem;
+    left: 25rem;
+    /* background-color: rgb(255, 220, 167); */
   }
   #yellowInPot {
-    top: -17.5%;
     left: -70%;
+  }
+  #garlicInPot {
+    top: -0.5rem;
+    left: -6rem;
+  }
+  #timerInPot {
+    top: -1.7rem;
+    left: -8.5rem;
+  }
+  #tadkaInPot {
+    top: -1.7rem;
+    left: -8.4rem;
+  }
+  /* Ingredient Images */
+  .ingredient-item img {
+    max-width: 85%;
+    max-height: auto;
   }
 }
