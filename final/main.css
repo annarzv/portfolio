@@ -678,4 +678,9 @@ body {
     max-width: 65%;
     max-height: auto;
   }
+  .right-column {
+    flex: 1.4;
+    height: 100vh;
+    margin-bottom: 0;
+  }
 }
