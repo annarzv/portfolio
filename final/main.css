@@ -331,6 +331,25 @@ body {
 }
 /* ------- MEDIA QUERIES -------- */
 
+@media screen and (min-width: 1351px) {
+  .left-column {
+    justify-content: center;
+  }
+  .ingredients-container {
+    margin-top: 2rem;
+    transition: 0.5s ease;
+  }
+
+  .right-column h2 {
+    margin-top: 2rem;
+    transition: 0.5s ease;
+  }
+  #droppable {
+    margin: 4rem;
+    transition: 0.5s ease;
+  }
+}
+
 @media screen and (max-width: 1350px) {
   #droppable {
     width: 50vw;
@@ -367,8 +386,8 @@ body {
   #droppable {
     width: 50vw;
     top: 17rem;
-    left: 13rem;
-    /* background-color: rgb(255, 225, 0); */
+    /* left: 13rem;
+    background-color: rgb(255, 225, 0); */
   }
   #redInPot {
     bottom: 67%;
@@ -410,9 +429,9 @@ body {
 
   #droppable {
     width: 50vw;
-    /* top: 20rem;
+    top: 20rem;
     left: 11rem;
-    background-color: rgb(255, 85, 0); */
+    /* background-color: rgb(255, 85, 0); */
   }
   #garlicInPot {
     top: 4.5rem;
@@ -469,8 +488,8 @@ body {
   }
   #droppable {
     width: 40vw;
-    top: 7rem;
-    left: 35rem;
+    top: 10rem;
+    left: 38rem;
     /* background-color: rgb(255, 0, 132); */
   }
   #redInPot {
@@ -478,7 +497,7 @@ body {
     left: -10rem;
   }
   #timerInPot {
-    top: -0.3rem;
+    top: -0.1rem;
     left: -7.8rem;
   }
   #garlicInPot {
@@ -486,7 +505,7 @@ body {
     top: 1.5rem;
   }
   #tadkaInPot {
-    top: -0.3rem;
+    top: -0.1rem;
     left: -7.7rem;
   }
   .right-column {
@@ -507,6 +526,7 @@ body {
 @media screen and (max-width: 800px) {
   #droppable {
     width: 45vw;
+    top: 10rem;
     left: 35rem;
     /* background-color: rgb(195, 0, 255); */
   }
@@ -522,6 +542,7 @@ body {
 @media screen and (max-width: 750px) {
   #droppable {
     width: 45vw;
+    top: 11rem;
     /* background-color: rgb(0, 255, 4); */
   }
   #timerInPot {
@@ -538,7 +559,7 @@ body {
 @media screen and (max-width: 700px) {
   #droppable {
     width: 45vw;
-    top: 8rem;
+    top: 12rem;
     left: 31rem;
     /* background-color: rgb(167, 223, 255); */
   }
@@ -559,7 +580,7 @@ body {
 @media screen and (max-width: 650px) {
   #droppable {
     width: 45vw;
-    top: 10rem;
+    top: 13rem;
     left: 32rem;
     /* background-color: rgb(255, 167, 234); */
   }
@@ -627,7 +648,7 @@ body {
   }
   #droppable {
     width: 45vw;
-    top: 10rem;
+    top: 13rem;
     left: 30rem;
     /* background-color: rgb(232, 255, 167); */
   }
@@ -651,7 +672,7 @@ body {
 @media screen and (max-width: 550px) {
   #droppable {
     width: 45vw;
-    top: 10rem;
+    top: 14.5rem;
     left: 25rem;
     /* background-color: rgb(255, 220, 167); */
   }
