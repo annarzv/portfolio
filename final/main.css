@@ -488,8 +488,8 @@ body {
   }
   #droppable {
     width: 40vw;
-    top: 10rem;
-    left: 38rem;
+    top: 7rem;
+    left: 39rem;
     /* background-color: rgb(255, 0, 132); */
   }
   #redInPot {
@@ -526,8 +526,8 @@ body {
 @media screen and (max-width: 800px) {
   #droppable {
     width: 45vw;
-    top: 10rem;
-    left: 35rem;
+    top: 7rem;
+    left: 36rem;
     /* background-color: rgb(195, 0, 255); */
   }
   #timerInPot {
@@ -542,7 +542,7 @@ body {
 @media screen and (max-width: 750px) {
   #droppable {
     width: 45vw;
-    top: 11rem;
+    top: 7rem;
     /* background-color: rgb(0, 255, 4); */
   }
   #timerInPot {
@@ -559,8 +559,8 @@ body {
 @media screen and (max-width: 700px) {
   #droppable {
     width: 45vw;
-    top: 12rem;
-    left: 31rem;
+    top: 9rem;
+    left: 32rem;
     /* background-color: rgb(167, 223, 255); */
   }
   #garlicInPot {
@@ -580,8 +580,8 @@ body {
 @media screen and (max-width: 650px) {
   #droppable {
     width: 45vw;
-    top: 13rem;
-    left: 32rem;
+    top: 9rem;
+    left: 31rem;
     /* background-color: rgb(255, 167, 234); */
   }
   #timerInPot {
@@ -648,7 +648,7 @@ body {
   }
   #droppable {
     width: 45vw;
-    top: 13rem;
+    top: 8rem;
     left: 30rem;
     /* background-color: rgb(232, 255, 167); */
   }
@@ -672,8 +672,8 @@ body {
 @media screen and (max-width: 550px) {
   #droppable {
     width: 45vw;
-    top: 14.5rem;
-    left: 25rem;
+    top: 10.5rem;
+    left: 27rem;
     /* background-color: rgb(255, 220, 167); */
   }
   #yellowInPot {
