@@ -89,6 +89,7 @@ html {
 /* Projects Grid */
 .container {
   display: flex;
+  overflow: hidden;
   /* justify-content: space-around; */
   flex-wrap: wrap;
   gap: 1rem;
@@ -408,9 +409,6 @@ h1 {
   }
   .item {
     flex-basis: 100%; /* 1 item per row */
-  }
-  .container {
-    overflow-x: none;
   }
 }
 
