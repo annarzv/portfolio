@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Background Video -->
+        <video
+            autoplay
+            muted
+            loop
+            id="myVideo"
+        >
+            <source src="khi.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <!-- Displays WEATHER -->
+        <div class="main">
+            <h1 id="title-margin">current weather in Karachi, Pakistan</h1>
+            <div id="weather-container">
+                <p id="city-name"></p>
+                <p id="temperature"></p>
+                <p id="description"></p>
+                <p id="humidity"></p>
+                <p id="wind-speed"></p>
+                <p id="error-display" class="error-message"></p>
+            </div>
+            <p class="testing">
+                <a href="https://www.pexels.com/@assadtanoliphotographer/highlights/" target="_blank">video credits | AssadAliT</a>
+            </p>
+        </div>
+        <script>
+    async function getWeather() {
+      // **Replace with your OpenWeatherMap API Key**
+      const apiKey = 'c7c7536f2802799b4d1019f14048b077';
+      // **Replace with your desired city**
+      const city = 'Karachi';
+      const url = 'https://api.openweathermap.org/data/2.5/weather?q=Karachi&appid=c7c7536f2802799b4d1019f14048b077&units=metric'; // Using metric units
+
+      try {
+        const response = await fetch(url);
+
+        // Check if the response is OK (status code 200-299)
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        // Dynamically display the weather data
+        document.getElementById('city-name').textContent = `City: ${data.name}`;
+        document.getElementById('temperature').textContent = `Temperature: ${data.main.temp}°C`;
+        document.getElementById('description').textContent = `Description: ${data.weather[0].description}`;
+        document.getElementById('humidity').textContent = `Humidity: ${data.main.humidity}%`;
+        document.getElementById('wind-speed').textContent = `Wind Speed: ${data.wind.speed} m/s`;
+
+      } catch (error) {
+        // Handle errors
+        console.error('Error fetching weather data:', error);
+        document.getElementById('error-display').textContent = 'Could not fetch weather data. Please try again later.';
+      }
+    }
+    
+    // Call the function to get the weather data when the page loads
+    getWeather();
+        </script>
+    </body>
+</html>

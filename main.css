@@ -1,4 +1,437 @@
+* {
+  box-sizing: border-box;
+}
+/* Keeps images within browser size */
+img {
+  max-width: 100%;
+}
 body {
-  background-color: rgb(248, 241, 255);
-  color: rgb(93, 2, 111);
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fffffa;
+  cursor: url("media/yellow-star.svg"), auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------ HOME PAGE ------ */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  /* border-bottom: 1px solid black; */
+  /* background-color: rgb(255, 252, 229); */
+  margin-top: 2rem;
+}
+
+/* Logo IMG */
+.logo {
+  width: 170px;
+  /* background-color: blue; */
+  /* display: block; */
+}
+
+/* Line Separater below Logo */
+.line-separator {
+  border-top: 1.5px solid black;
+  margin-top: 1rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  z-index: -20;
+}
+
+/* Anna Rizvi + Navigation Container */
+.navigation-home {
+  /* background-color: rgb(222, 243, 255); */
+  display: flex;
+  flex-direction: row;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+
+/* Anna Rizvi */
+.name {
+  /* background-color: lightblue; */
+  /* font-family: "Outfit"; */
+  /* font-family: "Nanum Pen Script"; */
+  font-size: 150%;
+}
+
+/* Nav Links Container */
+.nav-link-container {
+  /* background-color: rgb(175, 238, 144); */
+  display: flex;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  /* border-bottom: 1px dotted black; */
+  gap: 2rem;
+  font-family: "Nanum Pen Script";
+  font-weight: 200;
+  font-size: 115%;
+  align-items: end;
+}
+
+.nav-link-container a {
+  text-decoration: none;
+  color: black;
+}
+.nav-link-container a:hover {
+  /* color: #c0de00; */
+  rotate: -5deg;
+}
+.nav-link-container a:active {
+  text-decoration: underline;
+}
+
+/* Projects Grid */
+.container {
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 4rem 15rem;
+}
+
+/* Each individual container item */
+.item {
+  /* Set the default size of each item. Use calc() to account for the gap. */
+  flex-basis: calc(33.33% - 1rem); /* 3 items per row on larger screens */
+  background-color: lightgoldenrodyellow;
+  cursor: pointer;
+}
+
+.item:hover {
+  border: 1px solid;
+}
+
+/* Makes sure images and videos inside the item are responsive */
+.item img,
+.item video,
+.item embed {
+  width: 100%;
+  height: 100%; /* SET HEIGHT TO 100% OF THE PARENT .item */
+  object-fit: cover; /* ENSURE MEDIA FILLS THE SPACE WITHOUT DISTORTION */
+  display: block;
+}
+
+/* Heirloom Project background color */
+#yellow {
+  background-color: #ffdf6a;
+}
+
+/* ---- 
+
+ABOUT PAGE 
+
+---- */
+
+.main-container {
+  display: flex;
+}
+/* Text */
+.left-side {
+  flex: 1;
+  padding: 12rem 3rem;
+  /* background-color: lightblue; */
+}
+.left-side h1 {
+  font-family: "Nanum Pen Script";
+  font-size: 250%;
+}
+.left-side p {
+  font-family: "Outfit";
+  line-height: 1.6;
+}
+
+/* Styles for the right side image container */
+.right-side {
+  flex: 2;
+  margin-top: -35rem;
+}
+/* Ensure the image fills its container and scales down */
+.right-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-left: 1px solid;
+}
+
+/* Bubble Nav */
+
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #ffec5b;
+  border-radius: 50% 50% 50% 50%;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+  cursor: pointer;
+}
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: #000;
+  display: block;
+  transform-origin: center;
+  transition: 0.5s ease-in-out;
+}
+label .hamburger:after,
+label .hamburger:before {
+  transition: 0.5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+label .hamburger:before {
+  top: -10px;
+}
+label .hamburger:after {
+  bottom: -10px;
+}
+label input {
+  display: none;
+}
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #ffec5b, 0 0 0 100vh #ffec5b;
+  border-radius: 0;
+}
+label input:checked + .menu .hamburger {
+  transform: rotate(45deg);
+}
+label input:checked + .menu .hamburger:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+label input:checked + .menu .hamburger:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+label input:checked + .menu + ul {
+  opacity: 1;
+}
+label ul {
+  list-style: none;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.25s 0s ease-in-out;
+}
+
+/* when menu is checked (open), bring it to front */
+label input:checked + .menu + ul {
+  opacity: 1;
+  z-index: 200; /* only active when menu is open */
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #000;
+  font-family: "Outfit";
+  text-decoration: none;
+  font-size: 5em;
+}
+
+label a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1.5rem;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+
+/* 
+
+-----------------   START OF MEDIA QUERIES ------------------
+*/
+@media (width >= 1200px) {
+  /* body {
+    background-color: lightgoldenrodyellow;
+  } */
+  .line-separator,
+  .navigation-home {
+    margin-left: 15rem;
+    margin-right: 16rem;
+  }
+}
+@media (width < 1150px) {
+  /* body {
+    background-color: bisque;
+  } */
+}
+@media (width < 1050px) {
+  /* body {
+    background-color: bisque;
+  } */
+  .line-separator,
+  .navigation-home {
+    margin-left: 5rem;
+    margin-right: 6rem;
+  }
+  .container {
+    margin: 4rem 5rem;
+  }
+  .item {
+    flex-basis: calc(50% - 1rem); /* 2 items per row */
+  }
+}
+
+@media (width < 950px) {
+  /* body {
+    background-color: rgb(196, 255, 251);
+  } */
+  /* .line-separator,
+  .navigation-home {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  } */
+  .right-side {
+    margin-top: -55rem;
+    transition: 0.5s;
+  }
+  .left-side {
+    margin-top: -2rem;
+  }
+}
+
+@media (width < 850px) {
+  /* body {
+    background-color: rgb(255, 196, 196);
+  } */
+  /* .line-separator,
+  .navigation-home {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  } */
+}
+
+@media (width < 750px) {
+  /* body {
+    background-color: rgb(206, 196, 255);
+  } */
+  .line-separator,
+  .navigation-home {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  /* Hides Main Navigation to replace w/ hamburger menu */
+  .nav-link-container {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    font-size: 100%;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navigation-home {
+    justify-content: center;
+  }
+  .overlay .closebtn {
+    font-size: 60px;
+  }
+
+  /* ABOUT PAGE */
+  .main-container {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    flex: 1;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .left-side {
+    padding: 2rem;
+  }
+  .left-side h1 {
+    font-size: 270%;
+  }
+  .left-side p {
+    font-size: 115%;
+  }
+
+  .right-side img {
+    border-left: none;
+    border-top: 1px solid;
+  }
+}
+
+@media (width < 650px) {
+  /* body {
+    background-color: rgb(255, 160, 160);
+  } */
+  .line-separator,
+  .navigation-home {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .logo {
+    width: 150px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    transition: 0.5s;
+  }
+  .name {
+    font-size: 190%;
+  }
+  .hamburger-menu {
+    font-size: 40px;
+  }
+  .container {
+    margin: 2rem 2rem;
+  }
+  .item {
+    flex-basis: 100%; /* 1 item per row */
+  }
+}
+
+@media (width < 500px) {
+  /* body {
+    background-color: aqua;
+  } */
+  .line-separator,
+  .navigation-home {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }

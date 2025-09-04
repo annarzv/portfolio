@@ -1,0 +1,620 @@
+* {
+  box-sizing: border-box;
+}
+/* Keeps images within browser size */
+img {
+  max-width: 100%;
+}
+
+/*------ Home Page ------*/
+
+/* Zain Font */
+.zain-extrabold {
+  font-family: "Zain", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Work Sans Font */
+.work-sans-font {
+  font-family: "Work Sans", monospace;
+  font-optical-sizing: auto;
+  font-weight: 297;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100vh;
+  margin: 0;
+}
+
+/* Tomato Logo */
+.logo {
+  width: auto;
+  height: 28px;
+  position: fixed;
+  left: 30px;
+  bottom: 20px;
+  z-index: 1250;
+}
+/* Adds a slight tilt to tomato logo on hover */
+.logo:hover {
+  rotate: 10deg;
+}
+
+/* -------------- YELLOW DAAL PAGE ---------- */
+
+/* Main Layout Container for 2 Columns */
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+/* Left Column: Ingredients + Pot */
+.left-column {
+  flex: 1;
+  display: flex;
+}
+
+/* Right Column: Actual Recipe */
+.right-column {
+  flex: 1;
+  padding: 2rem;
+  background-color: rgb(252, 214, 214);
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #250001;
+  height: 100vh;
+  width: 100vw;
+  border-left: 1px solid #250001;
+  overflow: auto;
+  cursor: s-resize;
+  z-index: 1200;
+}
+/* Recipe Title */
+.right-column h2 {
+  font-size: 60px;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  line-height: 100%;
+  color: rgb(71, 21, 21);
+}
+/* Recipe paragraph */
+.right-column p {
+  font-size: 120%;
+  line-height: 1.6;
+  font-family: "Work Sans";
+  font-weight: 400;
+  color: rgb(71, 21, 21);
+}
+
+/* Container for the Ingredients */
+.ingredients-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+  max-width: 40%;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+/* Number inside ingredient container  */
+.ingredients-container p {
+  color: rgb(71, 21, 21);
+  text-align: left;
+  margin-top: -1.5rem;
+  margin-right: 0.5rem;
+  font-family: monospace;
+  font-size: 95%;
+  font-weight: bold;
+}
+
+/* Ingredient Styling - common class for all draggable items */
+.ingredient-item {
+  width: 90px;
+  height: auto;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  z-index: 999;
+}
+/* Adds fun tilt to ingredients on hover */
+.ingredient-item:hover {
+  rotate: -15deg;
+}
+/* Ingredient Images */
+.ingredient-item img {
+  max-width: 70%;
+  max-height: auto;
+}
+
+/* Pot Styling */
+#droppable {
+  padding: 0;
+  position: absolute;
+  left: 2rem;
+  border: none;
+  transform: rotate(-5deg);
+  max-width: 35vw;
+  background-color: transparent;
+  rotate: -10deg;
+}
+
+/* Initial empty pot image */
+#droppable img#potImage {
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* background-color: yellow; */
+  /* top: 4rem;
+  left: -8rem; */
+}
+
+/* General Styling for dropped ingredients IN pot */
+.dropped-ingredient {
+  height: auto;
+  position: absolute;
+  z-index: 20;
+}
+/* Water position IN pot */
+#waterInPot {
+  width: 100%;
+  height: auto;
+  top: -5rem;
+  left: -10rem;
+  z-index: 19;
+}
+
+/* Yellow Daal position IN Pot*/
+#yellowInPot {
+  width: 100%;
+  height: auto;
+  top: -5rem;
+  left: -10rem;
+  z-index: 19;
+}
+
+/* Red Daal position IN pot */
+#redInPot {
+  width: 100%;
+  height: auto;
+  top: -5rem;
+  left: -10rem;
+  z-index: 19;
+}
+
+/* # Spices: Haldi, Red Pepper Flakes, Salt IN pot */
+#spicesInPot {
+  width: 100%;
+  height: auto;
+  top: -5rem;
+  left: -10rem;
+  z-index: 19;
+}
+/* Garlic IN pot */
+#garlicInPot {
+  width: 50%;
+  height: auto;
+  top: 7rem;
+  left: -1rem;
+  z-index: 19;
+}
+
+/* Timer IN pot - almost final output of no water & more yellow */
+#timerInPot {
+  width: 74%;
+  height: auto;
+  top: 3.9rem;
+  left: -6rem;
+  z-index: 19;
+}
+/* Tadka IN Pot - Final Daal IMG */
+#tadkaInPot {
+  width: 74%;
+  height: auto;
+  top: 3.9rem;
+  left: -6rem;
+  z-index: 19;
+}
+
+/* Still Hungry Button */
+#stillHungryBtn {
+  background-color: rgb(255, 196, 196);
+  padding: 7px 10px;
+  border: 2px solid #250001;
+  cursor: cell;
+  display: none;
+  position: fixed;
+  left: 2.5rem;
+  top: 2rem;
+}
+/* ------- MEDIA QUERIES -------- */
+
+@media screen and (min-width: 1351px) {
+  .left-column {
+    justify-content: center;
+  }
+  .ingredients-container {
+    margin-top: 2rem;
+    transition: 0.5s ease;
+  }
+
+  .right-column h2 {
+    margin-top: 2rem;
+    transition: 0.5s ease;
+  }
+  #droppable {
+    transition: 0.5s ease;
+    top: 19rem;
+    left: 5rem;
+    /* background-color: blue; */
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #droppable {
+    width: 50vw;
+    top: 15rem;
+    left: 5rem;
+    transition: 0.5s;
+    /* background-color: blue; */
+  }
+  #redInPot {
+    bottom: 65%;
+  }
+  .ingredients-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #droppable {
+    width: 50vw;
+    /* background-color: rgb(0, 255, 110); */
+  }
+  #redInPot {
+    bottom: 65%;
+  }
+  .parent {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #droppable {
+    width: 50vw;
+    top: 17rem;
+    /* left: 13rem;
+    background-color: rgb(255, 225, 0); */
+  }
+  #redInPot {
+    bottom: 67%;
+  }
+  #yellowInPot {
+    /* left: -29%; */
+    bottom: 67%;
+  }
+  #timerInPot {
+    top: 8.9%;
+  }
+  #garlicInPot {
+    top: 18%;
+  }
+  #tadkaInPot {
+    top: 8.9%;
+  }
+
+  .ingredient-item {
+    transition: width 0.5s;
+  }
+  /* Increases size of Left Column and reduces recipe column size */
+  .left-column {
+    flex: 1.5;
+  }
+  .right-column h2 {
+    font-size: 55px;
+  }
+  .right-column p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ingredients-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #droppable {
+    width: 50vw;
+    top: 20rem;
+    /* left: 11rem; */
+    /* background-color: rgb(255, 85, 0); */
+  }
+  #garlicInPot {
+    top: 4.5rem;
+  }
+  #timerInPot {
+    top: 2.1rem;
+    left: -7rem;
+  }
+  #tadkaInPot {
+    top: 2rem;
+    left: -6.6rem;
+  }
+  .div1,
+  .div2 {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #droppable {
+    width: 50vw;
+    top: 24rem;
+    left: 2.5rem;
+    /* background-color: rgb(255, 85, 0); */
+  }
+  #tadkaInPot {
+    top: 1.5rem;
+    left: -6.6rem;
+  }
+  .right-column {
+    flex: 1.5;
+  }
+  .ingredients-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #droppable {
+    width: 50vw;
+  }
+  #redInPot {
+    bottom: 85%;
+    left: 110%;
+  }
+}
+@media screen and (max-width: 851px) {
+  .main-container {
+    flex-direction: column;
+    height: 50vh;
+  }
+  .logo {
+    top: 3%;
+    left: 90%;
+  }
+  #droppable {
+    width: 40vw;
+    top: 4rem;
+    left: 28rem;
+    /* background-color: rgb(255, 0, 132); */
+  }
+  #redInPot {
+    bottom: 88%;
+    left: -10rem;
+  }
+  #timerInPot {
+    top: -0.1rem;
+    left: -7.8rem;
+  }
+  #garlicInPot {
+    left: -4rem;
+    top: 1.5rem;
+  }
+  #tadkaInPot {
+    top: -0.1rem;
+    left: -7.7rem;
+  }
+  .right-column {
+    border-top: 1px solid black;
+    border-left: none;
+    font-size: 110%;
+    overflow: auto;
+    margin-bottom: -0.5rem;
+  }
+  .ingredients-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #stillHungryBtn {
+    left: 30px;
+    top: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #droppable {
+    width: 45vw;
+    top: 5rem;
+    /* left: 33rem; */
+    /* background-color: rgb(195, 0, 255); */
+  }
+  #timerInPot {
+    top: 0.1rem;
+    left: -7.7rem;
+  }
+  #tadkaInPot {
+    top: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #droppable {
+    width: 45vw;
+    top: 6rem;
+    left: 26rem;
+    /* background-color: rgb(0, 255, 4); */
+  }
+  #timerInPot {
+    top: -0.2rem;
+  }
+  #tadkaInPot {
+    top: -0.2rem;
+  }
+  #garlicInPot {
+    top: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #droppable {
+    width: 40vw;
+    /* top: 6rem; */
+    left: 25rem;
+    /* background-color: rgb(167, 223, 255); */
+  }
+  #garlicInPot {
+    top: 1rem;
+    left: -5rem;
+  }
+  #timerInPot {
+    top: -0.5rem;
+    left: -8rem;
+  }
+  #tadkaInPot {
+    top: -0.5rem;
+    left: -7.9rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #droppable {
+    width: 45vw;
+    top: 8rem;
+    left: 23rem;
+    /* background-color: rgb(255, 167, 234); */
+  }
+  #timerInPot {
+    top: -0.9rem;
+  }
+  #tadkaInPot {
+    top: -0.9rem;
+  }
+  .bottom-half {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mainTomato {
+    height: 50px;
+    transition: 1s ease;
+  }
+  .mainHeader h1 {
+    font-size: 340%;
+    transition: 1s ease;
+  }
+  .mainHeader h3 {
+    font-size: 145%;
+    transition: 1s ease;
+  }
+  .parent {
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 100vw;
+  }
+  .parent img {
+    width: 65vw;
+  }
+  .div1,
+  .div2,
+  .div3 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex: 1; */
+  }
+
+  .div2 {
+    padding: 1.3rem;
+  }
+
+  .right-column h2 {
+    font-size: 55px;
+    transition: 0.5s ease;
+  }
+  .right-column p {
+    font-size: 120%;
+    transition: 0.5s ease;
+  }
+  .left-column {
+    flex: 1.3;
+  }
+  #stillHungryBtn {
+    left: 30px;
+    top: 20px;
+  }
+  #droppable {
+    width: 45vw;
+    /* top: 1rem;
+    left: 2rem; */
+    /* background-color: rgb(232, 255, 167); */
+  }
+  #redInPot {
+    left: -60%;
+  }
+
+  #garlicInPot {
+    top: 0.2rem;
+  }
+  #timerInPot {
+    top: -1.2rem;
+    left: -8.2rem;
+  }
+  #tadkaInPot {
+    top: -1.1rem;
+    left: -8.2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #droppable {
+    width: 45vw;
+    top: 9.5rem;
+    left: 18rem;
+    /* background-color: rgb(255, 220, 167); */
+  }
+  #yellowInPot {
+    left: -71%;
+  }
+  #garlicInPot {
+    top: -0.5rem;
+    left: -6rem;
+  }
+  #timerInPot {
+    top: -1.7rem;
+    left: -8.5rem;
+  }
+  #tadkaInPot {
+    top: -1.7rem;
+    left: -8.5rem;
+  }
+  .ingredients-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* Ingredient Images */
+  .ingredient-item img {
+    max-width: 65%;
+    max-height: auto;
+  }
+  .right-column {
+    flex: 1.4;
+    height: 100vh;
+    margin-bottom: 0;
+  }
+}

@@ -15,14 +15,6 @@ img {
   font-style: normal;
 }
 
-/* Work Sans Font */
-.work-sans-font {
-  font-family: "Work Sans", monospace;
-  font-optical-sizing: auto;
-  font-weight: 297;
-  font-style: normal;
-}
-
 /* Main Header Container */
 .mainHeader {
   text-align: center;
@@ -46,6 +38,7 @@ img {
 /* Secondary Title */
 .mainHeader h3 {
   font-family: "Work Sans";
+  font-weight: 300;
   margin-top: -0.5rem;
   color: red;
   padding: 1rem;
@@ -347,6 +340,7 @@ body {
   #droppable {
     margin: 4rem;
     transition: 0.5s ease;
+    top: 12rem;
   }
 }
 

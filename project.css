@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+/* Keeps images within browser size */
+img {
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  background-color: #fffffa;
+  cursor: url("media/yellow-star.svg"), auto;
+}
+
+/* Anna Rizvi */
+.name {
+  display: inline;
+  position: relative;
+  top: 3.5rem;
+  left: 3rem;
+  font-family: "Outfit";
+  font-size: 120%;
+}
+.name a {
+  text-decoration: none;
+  color: black;
+}
+
+/* -----  HAMBURGER MENU + OVERLAY ----   */
+
+/* Hamburger menu icon */
+.hamburger-menu {
+  position: fixed;
+  top: 2.5rem;
+  right: 3rem;
+  font-size: 35px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 20000;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+  /* background-color: rgb(0, 0, 0); */
+  background-color: #fffffa;
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+/* Overlay Link Container */
+.overlay-content {
+  position: relative;
+  top: 13%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Overlay Link Items */
+.overlay-content a {
+  margin: 5rem;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 350%;
+  /* color: #818181; */
+  color: black;
+  display: block;
+  transition: 0.3s;
+  font-family: "Outfit";
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #c0de00;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 50px;
+}
+
+/* ----- 
+Project Details Text 
+------ */
+
+/* Main Text Container */
+.text-container {
+  /* background-color: lightblue; */
+  margin-top: 7rem;
+}
+
+/* Title of Project */
+.project-title {
+  font-family: "Nanum Pen Script";
+  text-align: center;
+  font-size: 250%;
+}
+
+/* Secondary title of project (Project type) */
+.project-type {
+  font-family: "Outfit";
+  font-weight: 100;
+  text-align: center;
+  font-size: 105%;
+  margin-top: -0.5rem;
+}
+
+/* Project detail paragraph */
+.project-details {
+  font-family: "Outfit";
+  margin: 3rem 15rem;
+  line-height: 1.5;
+  text-align: justify;
+  font-weight: 100;
+}
+
+.image-container {
+  margin-top: 5rem;
+  /* background-color: lightblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  /* border-top: 1px solid; */
+}
+
+.image {
+  /* background-color: coral; */
+  border: 3px solid #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 393px;
+  width: 500px;
+  box-shadow: 9px 7px 5px rgb(238, 238, 238);
+}
+
+/* Makes sure videos inside the container are responsive */
+.image video {
+  width: 94%;
+  height: 100%; /* SET HEIGHT TO 100% OF THE PARENT .item */
+  object-fit: cover; /* ENSURE MEDIA FILLS THE SPACE WITHOUT DISTORTION */
+  display: block;
+}
+
+/* ---------   MEDIA QUERIES -----------*/
+@media (width >= 1200px) {
+  .project-details {
+    margin: 3rem 25rem;
+  }
+}
+
+@media (width < 1200px) {
+  .project-details {
+    margin: 3rem 22rem;
+  }
+}
+
+@media (width < 1150px) {
+  .image {
+    height: 300px;
+    width: 384px;
+    transition: 0.5s;
+  }
+}
+
+@media (width < 1100px) {
+  .project-details {
+    /* background-color: lightblue; */
+    margin: 3rem 20rem;
+  }
+  .image-container {
+    gap: 3rem;
+  }
+  .image {
+    height: 250px;
+    width: 320px;
+    transition: 0.5s;
+  }
+}
+
+@media (width < 1000px) {
+  .project-details {
+    /* background-color: rgb(173, 230, 203); */
+    margin: 3rem 17rem;
+  }
+}
+
+@media (width < 900px) {
+  .project-details {
+    /* background-color: rgb(176, 173, 230); */
+    margin: 3rem 14rem;
+  }
+  .image {
+    height: 400px;
+    width: 510px;
+    transition: 0.5s;
+  }
+}
+
+@media (width < 800px) {
+  .project-details {
+    /* background-color: rgb(191, 230, 173); */
+    margin: 3rem 11rem;
+  }
+}
+
+@media (width < 700px) {
+  .project-details {
+    /* background-color: rgb(230, 173, 212); */
+    margin: 3rem 8rem;
+    font-size: 115%;
+  }
+}
+
+@media (width < 600px) {
+  .project-details {
+    /* background-color: rgb(230, 189, 173); */
+    margin: 3rem 4rem;
+  }
+  .image-container {
+    gap: 4rem;
+  }
+  .image {
+    height: 300px;
+    width: 410px;
+    transition: 0.5s;
+  }
+}
+@media (width < 500px) {
+  .project-details {
+    /* background-color: rgb(173, 230, 222); */
+    margin: 3rem 2rem;
+  }
+}

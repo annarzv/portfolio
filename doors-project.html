@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doors Project</title>
+        <link rel="stylesheet" href="project.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum Pen Script:wght@400&display=swap">
+    </head>
+    <style>
+        h1 a{
+            color: blue; 
+            text-decoration: none;
+        }
+        p a{
+            color: black; 
+            text-underline-offset:4px;
+        }
+        p a:hover{
+            color: rgb(126, 126, 255); 
+        }
+        .image img,
+        .image video,
+        .image embed {
+        width: 100%;
+        height: 100%; /* SET HEIGHT TO 100% OF THE PARENT .item */
+        object-fit: cover; /* ENSURE MEDIA FILLS THE SPACE WITHOUT DISTORTION */
+        display: block;
+        }
+    </style>
+    <body>
+        <header>
+            <div class="name">
+                <a href="index.html">
+                    anna rizvi
+                </a>
+            </div>
+            <!-- Hamburger Menu -->
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">work</a>
+                    <a href="#">35mm film</a>
+                    <a href="about.html">about</a>
+                </div>
+            </div>
+            <span class="hamburger-menu" onclick="openNav()">&#9776;</span>
+        </header>
+        <div class="text-container">
+            <h1 class="project-title">
+                <a href="passion/passion.html" target="_blank">
+                    Doors
+                </a>
+            </h1>
+            <h3 class="project-type">Website Development | VCU Handmade Web</h3>
+            <p class="project-details">
+                <i>Doors</i>
+                is an homage to oral tradition and sisterhood, a cookbook, a family archive, an experimental platform, and my first ever project of personal illustrations.
+                <br>
+                <br>
+                The assignment was to create a website about a passion of ours. I've grown an appreciation for architecture that felt personal to me - something always under construction, that reflected the nature of the web. I felt compelled to try out jQueryUI's drag-&-drop function and incoorporate handmade illustrations; an interactive game-like archive of the recipes I grew up with felt like the perfect union.
+            </p>
+        </div>
+        <!-- Project Images -->
+        <!-- Image Container -->
+        <div class="image-container">
+            <div class="image">
+                <img src="media/doors-media/Screenshot 2025-08-26 at 9.45.39 PM.png">
+            </div>
+            <div class="image">
+                <img src="media/doors-media/Screenshot 2025-08-26 at 9.52.09 PM.png">
+            </div>
+            <div class="image">
+                <video
+                    src="media/doors-media/Screen Recording 2025-08-26 at 9.56.41 PM.mov"
+                    autoplay
+                    muted
+                    playsinline
+                    alt="Scrolling through doors project images and using scroll to top feature to move up"
+                ></video>
+            </div>
+            <div class="image">
+                <img src="media/doors-media/Screenshot 2025-08-26 at 10.05.20 PM.png">
+            </div>
+        </div>
+        <script>
+            // Hamburger Menu
+            function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+            }
+            
+            function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+/* PRACTICE 10 */
+
+body {
+  background-color: #f7f7f2;
+}
+
+h1 {
+  color: #99b12f;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 55px;
+}
+h3,
+h4 {
+  font-family: monospace;
+  font-size: 25px;
+  color: #99b12f;
+}
+/* Main Div */
+.intro {
+  margin: 4rem;
+  padding: 3rem;
+  border: 5px solid #261c15;
+  border-style: double;
+}
+
+/* Toggle Feature including hidden <p>*/
+.toggle {
+  margin-top: 3rem;
+  color: #99b12f;
+  font-family: monospace;
+  color: #261c15;
+  font-size: 15px;
+}
+
+/* Button Styling (Hide me) */
+button {
+  padding: 10px 25px;
+  border: 2px solid #f05d23;
+  font-family: monospace;
+  font-size: larger;
+  background-color: white;
+  color: #261c15;
+}
+/* Button on hover styling */
+button:hover {
+  cursor: pointer;
+}
+
+/* --- ----------- JQUERY FORM ------------- --- */
+
+/* Form Submit Button */
+.btn {
+  padding: 10px 25px;
+  border: 2px solid #f05d23;
+  font-family: monospace;
+  font-size: larger;
+  background-color: white;
+  color: #261c15;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+/* Form Labels (username, email)  */
+label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #261c15;
+  font-family: monospace;
+}
+
+/* Form Error messages */
+.error {
+  color: red;
+  margin-left: 1rem;
+  font-style: italic;
+}
+
+/* ---------------------------------------------- */
+
+/* PRACTICE 9 STYLING / WEATHER API */
+
+/* Header + main box content */
+.main {
+  margin: 10%;
+}
+
+/* Title/header: Current Weather in Karachi, Pakistan */
+#title-margin {
+  margin: 2rem;
+  color: #d7f75b;
+}
+/* Weather details box */
+#weather-container {
+  background-color: #ebf5df;
+  color: #002aff;
+  border: 5px solid#d7f75b;
+  border-style: double;
+  padding: 1.5rem;
+  margin: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: monospace;
+}
+/* Video Creds */
+.testing {
+  color: #d7f75b;
+  text-align: right;
+  margin-right: 2rem;
+  font-family: monospace;
+}
+
+a {
+  color: #d7f75b;
+  text-decoration: none;
+}
+a:hover {
+  color: #002aff;
+  background-color: #d7f75b;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+/* Background video positioning */
+#myVideo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -50; /* places video in backgorund */
+}
