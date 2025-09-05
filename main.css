@@ -207,7 +207,7 @@ label input {
   display: none;
 }
 label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #ffec5b, 0 0 0 100vh #ffec5b;
+  box-shadow: 0 0 0 100vw #ffec5b, 0 0 0 0vh #ffec5b;
   border-radius: 0;
 }
 label input:checked + .menu .hamburger {
