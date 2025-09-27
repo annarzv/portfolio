@@ -36,8 +36,8 @@ h4 {
 }
 
 /**** 
-        HOME PAGE 
-****/
+          HOME PAGE 
+  ****/
 
 /* NAME + LINKS */
 .navigation-container {
@@ -46,6 +46,16 @@ h4 {
   position: fixed;
   left: 1rem;
   top: 0;
+}
+
+/* Intro blurb */
+.navigation-container p {
+  padding: 10px 15px;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-family: "Zodiak";
+  width: 30%;
+  /* background-color: lightblue; */
 }
 
 /* ONLY LINKS */
@@ -85,7 +95,7 @@ h4 {
   display: none;
   padding: 0 2rem 2rem;
   position: absolute;
-  top: 7rem;
+  top: 6.5rem;
   left: 0;
   width: 100%;
   background-color: #fffffa;
@@ -171,8 +181,8 @@ h4 {
 }
 
 /****
-        MEDIA QUERIES
-*****/
+          MEDIA QUERIES
+  *****/
 
 /* Styles for screens LARGER than 650px (Desktop View) */
 @media (min-width: 651px) {
@@ -211,6 +221,10 @@ h4 {
     justify-content: flex-start;
     /* Ensure the fixed name is always on top */
     z-index: 1001;
+  }
+  /* Places Mobile Nav Menu above intro text & everything else */
+  .mobile-menu-wrapper {
+    z-index: 2000;
   }
 
   /* Adjust window margin for mobile view (if needed) */
