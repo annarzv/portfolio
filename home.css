@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+}
+/* Keeps images within browser size */
+img {
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fffffa;
+  cursor: url("media/yellow-star.svg"), auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Importing Comico Font */
+@font-face {
+  font-family: "Comico";
+  src: url(media/new-media/new-fonts/Comico_Complete/Fonts/OTF/Comico-Regular.otf);
+}
+
+/* Importing Zodiak Font */
+@font-face {
+  font-family: "Zodiak";
+  src: url(media/new-media/new-fonts/Zodiak_Complete/Fonts/TTF/Zodiak-Variable.ttf);
+}
+
+/* Applying Comico font to all headers */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Comico";
+}
+
+/**** 
+        HOME PAGE 
+****/
+
+/* NAME + LINKS */
+.navigation-container {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 1rem;
+  top: 0;
+}
+
+/* ONLY LINKS */
+.nav-item {
+  font-family: "Zodiak";
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  padding: 10px 15px;
+  font-size: 17px;
+  cursor: url("media/yellow-star.svg"), auto;
+  /* background-color: lightblue; */
+}
+
+.nav-item:hover {
+  font-weight: 600;
+}
+
+/* NAME ONLY */
+.anna-rizvi {
+  padding: 10px 15px;
+}
+
+/* DEFAULT WINDOW */
+.window {
+  height: 750px;
+  width: auto;
+  display: flex;
+  margin: 4rem auto;
+  /* background-color: lightblue; */
+}
+
+/* --- MOBILE NAVIGATION STYLES --- */
+
+/* In-Place Mobile Menu Wrapper */
+.mobile-menu-wrapper {
+  /* Initially hide the menu */
+  display: none;
+  padding: 0 2rem 2rem;
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 100%;
+  background-color: #fffffa;
+  border-bottom: 2px solid black;
+  z-index: 500;
+}
+
+/* This class is added by JavaScript to show the menu (In-Place Expansion) */
+.mobile-menu-wrapper.is-open {
+  display: block;
+}
+
+/* Remove the margin on window-container so it stays in place */
+.window-container {
+  /* Reset any unwanted margin/padding that was pushing it down */
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Close Icon (Fixed at the top right) - Keep the position fixed */
+.close-icon {
+  position: fixed;
+  right: 2rem;
+  top: 2.2rem;
+  font-size: 24px;
+  color: black;
+  z-index: 1000;
+  cursor: pointer;
+  display: none;
+}
+
+/* Main Navigation Items (Web, Social, 35mm, About) */
+.mobile-nav-item {
+  font-family: "Zodiak";
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  line-height: 2;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 2rem;
+  font-size: 22px;
+}
+.social-icons i {
+  margin-right: 15px;
+}
+
+/* Styling the dot menu container */
+.open-icon {
+  /* Use flexbox to center and align the dots vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 24px; /* Total height of the icon */
+  width: 24px; /* Total width of the icon */
+  line-height: 1.5;
+
+  /* Position */
+  position: fixed;
+  right: 2rem;
+  top: 2.2rem;
+  z-index: 999;
+  display: none; /* Default: Hide on desktop */
+}
+
+/* Styling each individual dot */
+.dot-line {
+  display: block;
+  width: 5px; /* Size of the dot */
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%; /* Makes it a circle (dot) */
+}
+
+/****
+        MEDIA QUERIES
+*****/
+
+/* Styles for screens LARGER than 650px (Desktop View) */
+@media (min-width: 651px) {
+  /* Ensure all mobile elements are HIDDEN on desktop */
+  .mobile-menu-wrapper,
+  .open-icon,
+  .close-icon {
+    display: none !important;
+  }
+
+  /* Ensure desktop navigation links are VISIBLE */
+  .nav-item {
+    display: block;
+  }
+}
+
+/* Styles for screens smaller than 650px (Mobile View) */
+@media (max-width: 650px) {
+  /* Hides desktop navigation links */
+  .nav-item {
+    display: none;
+  }
+
+  /* Shows the dot menu icon (overrides the default 'display: none') */
+  .open-icon {
+    display: flex;
+  }
+
+  /* Keep the Anna Zhang name fixed and not stretched */
+  .navigation-container {
+    flex-direction: column;
+    width: auto;
+    justify-content: flex-start;
+    /* Ensure the fixed name is always on top */
+    z-index: 1001;
+  }
+
+  /* Adjust window margin for mobile view (if needed) */
+  .window {
+    height: 700px;
+    max-width: 650px;
+    margin: 6rem -3.5rem;
+    transition: 0.5s ease;
+  }
+}

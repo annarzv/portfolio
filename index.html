@@ -4,127 +4,110 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Anna Rizvi's Portfolio</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="home.css">
         <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum Pen Script:wght@400&display=swap">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="media/yellow-star.svg">
+        <style>
+            body{
+                overflow-y: hidden; 
+            }
+        </style>
     </head>
-    <style></style>
     <body>
-        <label>
-            <input type="checkbox">
-            <span class="menu">
-                <span class="hamburger"></span>
-            </span>
-            <ul>
-                <li>
-                    <a href="index.html">work</a>
-                </li>
-                <li>
-                    <a href="#">35mm</a>
-                </li>
-                <li>
-                    <a href="#">about</a>
-                </li>
-            </ul>
-        </label>
-        <!-- Header Container -->
-        <header class="header-container">
-            <!-- Navigation Main Container -->
-            <nav class="navigation-home">
-                <!-- Logo Illustration -->
-                <img src="IMG_4551-removebg-preview.png" class="logo">
-                <!-- Navigation Link Container -->
-                <div class="nav-link-container">
-                    <div class="name" id="urdu-name"> انا رضوی</div>
-                    <div class="name">anna rizvi</div>
-                    <!-- Individual Nav Links -->
-                    <!-- <a href="#projects">
-                        <div class="nav-link">work</div>
-                    </a>
-                    <a href="#">
-                        <div class="nav-link">35mm</div>
-                    </a>
-                    <a href="about.html">
-                        <div class="nav-link">about</div>
-                    </a> -->
-                </div>
+        <header class="mobile-header-fixed">
+            <nav class="navigation-container">
+                <h1 class="anna-rizvi">
+                    Anna
+                    Rizvi
+                </h1>
+                <a href="#" class="nav-item" data-img="media/new-media/window-yellow.png">Web</a>
+                <a href="#" class="nav-item" data-img="media/new-media/window-salmon.png">Social</a>
+                <a href="#" class="nav-item" data-img="media/new-media/window-pink.png">35mm</a>
+                <a href="#" class="nav-item" data-img="media/new-media/window-green.png">About</a>
             </nav>
+            <a href="javascript:void(0);" class="open-icon" onclick="toggleMobileMenu()">
+                <span class="dot-line dot-1"></span>
+                <span class="dot-line dot-2"></span>
+                <span class="dot-line dot-3"></span>
+            </a>
+            <a href="javascript:void(0);" class="close-icon" onclick="toggleMobileMenu()">
+                <i class="fa fa-times"></i>
+            </a>
         </header>
-        <!-- Projects Grid -->
-        <div class="container" id="projects">
-            <!-- Project 1 -->
-            <div class="item">
-                <embed
-                    type="text/html"
-                    src="screensaver/index.html"
-                    alt="Embedded screensaver project with clickable night/day toggle button"
-                    title="'Floated by' screensaver project"
-                >
-            </div>
-            <!-- Project 2 -->
-            <div class="item" id="yellow">
-                <a href="heirlooms-project.html">
-                    <img src="animated/daal-final.png" alt="Yellow lentils in pot" title="Heirloom Project">
-                </a>
-            </div>
-            <!-- Project 3 -->
-            <div class="item">
-                <video
-                    src="animated/Screen Recording 2025-08-15 at 5.44.11 PM.mov"
-                    autoplay
-                    muted
-                    playsinline
-                    alt="Radio Pakistan"
-                ></video>
-            </div>
-            <!-- Project 4 -->
-            <div class="item">
-                <a href="doors-project.html">
-                    <img src="media/Door.png" alt="Doors project" title="Doors Project">
-                </a>
-            </div>
-            <!-- Project 5 -->
-            <div class="item">
-                <video
-                    src="media/khi-weather.mov"
-                    autoplay
-                    muted
-                    playsinline
-                    alt="Karachi Weather API"
-                ></video>
-            </div>
-            <!-- Project 6 -->
-            <div class="item">
-                <img src="media/structure2.png" alt="Karachi Highways Project" title="Karachi Highways Project">
-            </div>
-            <!-- Project 7 -->
-            <div class="item">
-                <img src="media/Screenshot 2025-08-25 at 3.58.39 PM.png" alt="Analog Film Project" title="Analog Film Project">
-            </div>
-            <!-- Project 8 -->
-            <div class="item">
-                <img src="media/pixelstan.png" alt="Girls sitting on steps of museum in Pakistan" title="Pixelstan Project">
-            </div>
-            <!-- Project 9 -->
-            <div class="item">
-                <img src="media/swetha.jpg" alt="Girl smiling and doing dance pose" title="Swetha Prabakaran Portfolio">
+        <div id="fullScreenMenu" class="mobile-menu-wrapper">
+            <div class="menu-links">
+                <a href="#" class="mobile-nav-item">Web</a>
+                <a href="#" class="mobile-nav-item">Social</a>
+                <a href="#" class="mobile-nav-item">35mm</a>
+                <a href="#" class="mobile-nav-item">About</a>
+                <div class="social-icons">
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-github"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-envelope"></i>
+                </div>
             </div>
         </div>
+        <div class="window-container"></div>
+        <div class="window-container">
+            <img
+                src="media/new-media/window-all.png"
+                class="window"
+                id="mainImage"
+                alt="window"
+            >
+        </div>
         <script>
-        // Hamburger Menu
-        function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-        }
-        
-        function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
-        }
+                // JS to swap image on hover
+                const navItems = document.querySelectorAll('.nav-item');
+                const mainImage = document.getElementById('mainImage');
+                const defaultImg = mainImage.src;
+            
+                navItems.forEach(item => {
+                  const newImg = item.getAttribute('data-img');
+            
+                  item.addEventListener('mouseenter', () => {
+                    mainImage.src = newImg;
+                  });
+            
+                  item.addEventListener('mouseleave', () => {
+                    mainImage.src = defaultImg;
+                  });
+                });
+
+                // Mobile nav Toggle - REMOVES myLinks and TOGGLES the new menu
+            function toggleMobileMenu() {
+                var menu = document.getElementById("fullScreenMenu");
+                var closeIcon = document.querySelector(".close-icon");
+                var openIcon = document.querySelector(".open-icon");
+
+                // Toggle the 'is-open' class to control the menu's visibility via CSS
+                menu.classList.toggle("is-open");
+
+                if (menu.classList.contains("is-open")) {
+                    // Menu is OPEN
+                    openIcon.style.display = 'none'; // Hide the dots
+                    closeIcon.style.display = 'block'; // Show the 'X'
+                } else {
+                    // Menu is CLOSED
+                    openIcon.style.display = 'block'; // Show the dots
+                    closeIcon.style.display = 'none'; // Hide the 'X'
+                }
+            }
+            
+            // Initial state cleanup: Hide the 'X' button when the page loads
+            document.addEventListener('DOMContentLoaded', function() {
+                // Only show the dot menu if the screen is mobile size (CSS handles this, but this ensures 'X' is hidden)
+                document.querySelector(".close-icon").style.display = 'none';
+            });
         </script>
     </body>
 </html>
