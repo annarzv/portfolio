@@ -74,8 +74,8 @@ h4 {
   height: 800px;
   width: auto;
   display: flex;
-  margin: 5rem auto;
-  /* background-color: lightblue; */
+  margin: 6rem auto;
+  background-color: lightblue;
 }
 
 /* --- MOBILE NAVIGATION STYLES --- */
