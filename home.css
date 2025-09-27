@@ -75,7 +75,6 @@ h4 {
   width: auto;
   display: flex;
   margin: 7rem auto;
-  /* background-color: lightblue; */
 }
 
 /* --- MOBILE NAVIGATION STYLES --- */
@@ -210,7 +209,11 @@ h4 {
   .window {
     height: 700px;
     max-width: 650px;
-    margin: 8rem -3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: lightgreen; */
     transition: 0.5s ease;
   }
 }
