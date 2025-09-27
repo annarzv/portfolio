@@ -136,6 +136,11 @@ h4 {
   margin-right: 15px;
 }
 
+#main-icons {
+  padding: 10px 15px;
+  margin-top: 0.5rem;
+}
+
 /* Styling the dot menu container */
 .open-icon {
   /* Use flexbox to center and align the dots vertically */
@@ -190,6 +195,9 @@ h4 {
   .nav-item {
     display: none;
   }
+  #main-icons {
+    display: none;
+  }
 
   /* Shows the dot menu icon (overrides the default 'display: none') */
   .open-icon {
@@ -213,7 +221,6 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: lightgreen; */
     transition: 0.5s ease;
   }
 }
