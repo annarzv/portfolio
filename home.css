@@ -58,6 +58,13 @@ h4 {
   /* background-color: lightblue; */
 }
 
+/* Nav Links Container */
+.nav-general {
+  /* background-color: lightblue; */
+  width: 40%;
+  margin-top: 1rem;
+}
+
 /* ONLY LINKS */
 .nav-item {
   font-family: "Zodiak";
@@ -185,6 +192,40 @@ h4 {
           MEDIA QUERIES
   *****/
 
+/* Styles below 1000px */
+@media (max-width: 1000px) {
+  /* body {
+    background-color: lightblue;
+  } */
+  .window {
+    height: 650px;
+    margin: 9.5rem auto;
+  }
+}
+
+/* Styles below 950px */
+@media (max-width: 950px) {
+  /* body {
+    background-color: lightblue;
+  } */
+  .window {
+    height: 600px;
+    margin: 12rem auto;
+  }
+  .nav-general {
+    /* background-color: lightblue; */
+    margin-top: 3rem;
+    width: 45%;
+  }
+}
+
+/* Styles below 950px */
+@media (max-width: 900px) {
+  /* body {
+      background-color: lightblue;
+    } */
+}
+
 /* Styles for screens LARGER than 650px (Desktop View) */
 @media (min-width: 651px) {
   /* Ensure all mobile elements are HIDDEN on desktop */
@@ -215,7 +256,6 @@ h4 {
     display: flex;
   }
 
-  /* Keep the Anna Zhang name fixed and not stretched */
   .navigation-container {
     flex-direction: column;
     width: auto;
@@ -229,13 +269,13 @@ h4 {
   }
 
   .window {
-    height: 600px;
+    height: 590px;
     max-width: 650px;
     position: absolute;
-    top: 52%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
   }
 }
 
