@@ -228,7 +228,6 @@ h4 {
     z-index: 2000;
   }
 
-  /* Adjust window margin for mobile view (if needed) */
   .window {
     height: 600px;
     max-width: 650px;
@@ -242,6 +241,6 @@ h4 {
 
 @media (max-width: 450px) {
   .window {
-    top: 60%;
+    top: 55%;
   }
 }
