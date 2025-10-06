@@ -8,9 +8,10 @@ img {
 body {
   margin: 0;
   overflow-x: hidden;
-  background-color: #fffffa;
+  background-color: #fffff5;
   cursor: url("media/yellow-star.svg"), auto;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -33,6 +34,10 @@ h2,
 h3,
 h4 {
   font-family: "Comico";
+}
+
+p {
+  font-family: "Zodiak";
 }
 
 /**** 
@@ -123,6 +128,101 @@ h4 {
   padding-top: 0 !important;
 }
 
+/* Door Project Polaroid  */
+#door-preview {
+  position: fixed;
+  height: 210px;
+  top: 2rem;
+  right: 2rem;
+}
+/* Analog Project Polaroid */
+#analog-preview {
+  position: fixed;
+  height: 210px;
+  top: 16.5rem;
+  right: 2rem;
+}
+/* Pixelstan Project Polaroid */
+#pixelstan-preview {
+  position: fixed;
+  height: 210px;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+/* SFML Poster Preview */
+#sfml-preview {
+  position: fixed;
+  height: 217px;
+  top: 2rem;
+  right: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid black;
+}
+/* Veera Poster Preview */
+#veera-preview {
+  position: fixed;
+  height: 217px;
+  top: 16.5rem;
+  right: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid black;
+}
+/* Priyanka Poster Preview */
+#priyanka-preview {
+  position: fixed;
+  height: 210px;
+  bottom: 2rem;
+  right: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid black;
+}
+
+/* Film Photo 1 Preview  */
+#film1-preview {
+  position: fixed;
+  height: 150px;
+  top: 2rem;
+  right: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid black;
+}
+/* Film Photo 2 Preview  */
+#film2-preview {
+  position: fixed;
+  height: 150px;
+  top: 13rem;
+  right: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid black;
+}
+/* Film Photo 3 Preview */
+#film3-preview {
+  position: fixed;
+  height: 150px;
+  top: 24rem;
+  right: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid black;
+}
+/* Film Photo 3 Preview */
+#film4-preview {
+  position: fixed;
+  height: 150px;
+  bottom: 2rem;
+  right: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid black;
+}
+
+/* About Preview */
+#about-preview {
+  position: fixed;
+  height: 500px;
+  bottom: 2rem;
+  right: 7rem;
+}
+
 /* Close Icon (Fixed at the top right) - Keep the position fixed */
 .close-icon {
   position: fixed;
@@ -186,6 +286,15 @@ h4 {
   height: 5px;
   background-color: #000;
   border-radius: 50%; /* Makes it a circle (dot) */
+}
+/* Handwritten Note */
+.handwritten-note {
+  position: fixed;
+  bottom: 2.5rem;
+  left: 2rem;
+  text-align: left;
+  width: 20%;
+  line-height: 1.4;
 }
 
 /****

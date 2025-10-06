@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
-        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <!-- Load an icosn library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="media/yellow-star.svg">
@@ -65,7 +65,6 @@
                 </div>
             </div>
         </div>
-        <div class="window-container"></div>
         <div class="window-container">
             <img
                 src="media/new-media/window-all.png"
@@ -73,50 +72,39 @@
                 id="mainImage"
                 alt="window"
             >
+            <!-- START OF WEB PREVIEW POLAROIDS -->
+            <!-- DOOR POLAROID -->
+            <img src="media/new-media/web-preview-polaroids/door-preview.png" id="door-preview">
+            <!-- ANALOG POLAROID -->
+            <img src="media/new-media/web-preview-polaroids/analog-preview.png" id="analog-preview">
+            <!-- STRUCTURE POLAROID -->
+            <img src="media/new-media/web-preview-polaroids/pixelstan-preview.png" id="pixelstan-preview">
+            <!-- **************************** -->
+            <!--- START OF SOCIAL PREVIEW -->
+            <!-- SFML Preview -->
+            <img src="media/new-media/web-preview-polaroids/sfml-preview.png" id="sfml-preview">
+            <!-- Veera Preview -->
+            <img src="media/new-media/web-preview-polaroids/veera-white.png" id="veera-preview">
+            <!-- Priyanka Preview -->
+            <img src="media/new-media/web-preview-polaroids/priyanka-preview.png" id="priyanka-preview">
+            <!-- **************************** -->
+            <!--- START OF 35mm PREVIEW -->
+            <img src="media/new-media/web-preview-polaroids/IMG_1529.JPG" id="film1-preview">
+            <img src="media/new-media/web-preview-polaroids/IMG_0912.JPG" id="film2-preview">
+            <img src="media/new-media/web-preview-polaroids/IMG_3905.JPG" id="film3-preview">
+            <img src="media/new-media/web-preview-polaroids/IMG_3897.JPG" id="film4-preview">
+            <!-- **************************** -->
+            <!--- START OF About PREVIEW -->
+            <img src="media/new-media/web-preview-polaroids/about-anna.png" id="about-preview">
         </div>
-        <script>
-                // JS to swap image on hover
-                const navItems = document.querySelectorAll('.nav-item');
-                const mainImage = document.getElementById('mainImage');
-                const defaultImg = mainImage.src;
-            
-                navItems.forEach(item => {
-                  const newImg = item.getAttribute('data-img');
-            
-                  item.addEventListener('mouseenter', () => {
-                    mainImage.src = newImg;
-                  });
-            
-                  item.addEventListener('mouseleave', () => {
-                    mainImage.src = defaultImg;
-                  });
-                });
-
-                // Mobile nav Toggle - REMOVES myLinks and TOGGLES the new menu
-            function toggleMobileMenu() {
-                var menu = document.getElementById("fullScreenMenu");
-                var closeIcon = document.querySelector(".close-icon");
-                var openIcon = document.querySelector(".open-icon");
-
-                // Toggle the 'is-open' class to control the menu's visibility via CSS
-                menu.classList.toggle("is-open");
-
-                if (menu.classList.contains("is-open")) {
-                    // Menu is OPEN
-                    openIcon.style.display = 'none'; // Hide the dots
-                    closeIcon.style.display = 'block'; // Show the 'X'
-                } else {
-                    // Menu is CLOSED
-                    openIcon.style.display = 'block'; // Show the dots
-                    closeIcon.style.display = 'none'; // Hide the 'X'
-                }
-            }
-            
-            // Initial state cleanup: Hide the 'X' button when the page loads
-            document.addEventListener('DOMContentLoaded', function() {
-                // Only show the dot menu if the screen is mobile size (CSS handles this, but this ensures 'X' is hidden)
-                document.querySelector(".close-icon").style.display = 'none';
-            });
-        </script>
+        <div class="handwritten-note">
+            This website was handmade by me & is a fluid, everchanging space.
+            <br>
+            <i>Last updated - Oct 2025</i>
+        </div>
+        <!-- General jQuery file -->
+        <script src="jquery/jquery-3.7.1.min.js"></script>
+        <!-- Linking Personal JS file -->
+        <script src="scripts.js"></script>
     </body>
 </html>
