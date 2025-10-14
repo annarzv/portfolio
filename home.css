@@ -9,7 +9,8 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: #fffff5;
-  cursor: url("media/yellow-star.svg"), auto;
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFF47B" d="M22 11c-4.96 0-9-4.04-9-9 0-1.32-2-1.32-2 0 0 4.96-4.04 9-9 9-1.32 0-1.32 2 0 2 4.96 0 9 4.04 9 9 0 1.32 2 1.32 2 0 0-4.96 4.04-9 9-9 1.32 0 1.32-2 0-2Z"></path></svg>'),
+    auto;
 }
 
 html {
@@ -65,7 +66,6 @@ p {
 
 /* Nav Links Container */
 .nav-general {
-  /* background-color: lightblue; */
   width: 40%;
   margin-top: 1rem;
 }
@@ -78,7 +78,7 @@ p {
   color: black;
   padding: 10px 15px;
   font-size: 17px;
-  cursor: url("media/yellow-star.svg"), auto;
+  /* cursor: url("media/yellow-star.svg"), auto; */
   /* background-color: lightblue; */
   width: 40%;
 }
@@ -86,10 +86,19 @@ p {
 .nav-item:hover {
   font-weight: 600;
 }
+#test-hover:hover {
+  font-weight: 600;
+}
 
 /* NAME ONLY */
 .anna-rizvi {
   padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+.anna-rizvi:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 /* DEFAULT WINDOW */
@@ -108,7 +117,7 @@ p {
   display: none;
   padding: 0 2rem 2rem;
   position: absolute;
-  top: 6.5rem;
+  top: 5.5rem;
   left: 0;
   width: 100%;
   background-color: #fffffa;
@@ -266,7 +275,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   height: 24px; /* Total height of the icon */
   width: 24px; /* Total width of the icon */
   line-height: 1.5;
@@ -295,6 +303,19 @@ p {
   text-align: left;
   width: 20%;
   line-height: 1.4;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 2rem;
+}
+
+/* ABOUT PAGE */
+#about-graphic {
+  height: 750px;
 }
 
 /****
@@ -386,10 +407,13 @@ p {
     transform: translate(-50%, -50%);
     /* transition: 0.5s ease; */
   }
+  .handwritten-note {
+    display: none;
+  }
 }
 
 @media (max-width: 450px) {
   .window {
-    top: 55%;
+    top: 50%;
   }
 }

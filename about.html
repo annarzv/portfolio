@@ -4,20 +4,55 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About</title>
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum Pen Script:wght@400&display=swap">
+        <link rel="stylesheet" href="home.css">
     </head>
     <body>
-        <div class="main-container">
-            <div class="left-side">
-                <h1>hi, I'm anna :D</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus, in aperiam error voluptatum repudiandae, quisquam mollitia facilis, nihil laborum incidunt esse impedit dolores adipisci provident cupiditate. Odio, debitis similique.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi possimus, in aperiam error voluptatum repudiandae, quisquam mollitia facilis, nihil laborum incidunt esse impedit dolores adipisci provident cupiditate. Odio, debitis similique.</p>
-            </div>
-            <div class="right-side">
-                <img src="media/anna.jpg">
+        <!-- MAIN LEFT COLUMN NAV -->
+        <header class="mobile-header-fixed">
+            <nav class="navigation-container">
+                <h1>
+                    <a class="anna-rizvi" href="index.html">ANNA RIZVI</a>
+                </h1>
+                <p>
+                    designing,
+                    <br>
+                    developing,
+                    <br>
+                    but mostly touching grass
+                </p>
+                <div class="nav-general">
+                    <a href="#" class="nav-item">Web</a>
+                    <a href="#" class="nav-item" id="test-hover">Social</a>
+                    <a href="#" class="nav-item">35mm</a>
+                    <a href="about.html" class="nav-item">About</a>
+                </div>
+            </nav>
+            <a href="javascript:void(0);" class="open-icon" onclick="toggleMobileMenu()">
+                <span class="dot-line dot-1"></span>
+                <span class="dot-line dot-2"></span>
+                <span class="dot-line dot-3"></span>
+            </a>
+            <a href="javascript:void(0);" class="close-icon" onclick="toggleMobileMenu()">
+                <i class="fa fa-times"></i>
+            </a>
+        </header>
+        <!-- MOBILE HAMBURGER MENU -->
+        <div id="fullScreenMenu" class="mobile-menu-wrapper">
+            <div class="menu-links">
+                <a href="#" class="mobile-nav-item">Web</a>
+                <a href="#" class="mobile-nav-item">Social</a>
+                <a href="#" class="mobile-nav-item">35mm</a>
+                <a href="about.html" class="mobile-nav-item">About</a>
+                <div class="social-icons">
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-github"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-envelope"></i>
+                </div>
             </div>
         </div>
+        <!-- <div class="about-container">
+            <img src="media/new-media/about/Grey and White Modern Spring Collection App Interface Collage Instagram Post.svg" id="about-graphic">
+        </div> -->
     </body>
 </html>
