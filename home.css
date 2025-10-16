@@ -141,22 +141,28 @@ p {
 #door-preview {
   position: fixed;
   height: 210px;
+  width: 250px;
   top: 2rem;
   right: 2rem;
+  border: 1px solid black;
 }
 /* Analog Project Polaroid */
 #analog-preview {
   position: fixed;
   height: 210px;
+  width: 250px;
   top: 16.5rem;
   right: 2rem;
+  border: 1px solid black;
 }
 /* Pixelstan Project Polaroid */
 #pixelstan-preview {
   position: fixed;
   height: 210px;
+  width: 250px;
   bottom: 2rem;
   right: 2rem;
+  border: 1px solid black;
 }
 
 /* SFML Poster Preview */
@@ -414,6 +420,6 @@ p {
 
 @media (max-width: 450px) {
   .window {
-    top: 46%;
+    top: 40%;
   }
 }
