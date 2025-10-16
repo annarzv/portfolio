@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Importing Comico Font */
 @font-face {
   font-family: "Comico";
@@ -78,16 +82,27 @@ p {
   color: black;
   padding: 10px 15px;
   font-size: 17px;
-  /* cursor: url("media/yellow-star.svg"), auto; */
-  /* background-color: lightblue; */
-  width: 40%;
+  width: 100%;
 }
 
 .nav-item:hover {
   font-weight: 600;
 }
-#test-hover:hover {
-  font-weight: 600;
+
+#web:hover {
+  background-color: #fef16a;
+}
+
+#social:hover {
+  background-color: lightcoral;
+}
+
+#film:hover {
+  background-color: #ffb1e4;
+}
+
+#about:hover {
+  background-color: #bbfed3;
 }
 
 /* NAME ONLY */
@@ -96,10 +111,10 @@ p {
   text-decoration: none;
   color: black;
 }
-.anna-rizvi:hover {
+/* .anna-rizvi:hover {
   text-decoration: underline;
   text-underline-offset: 6px;
-}
+} */
 
 /* DEFAULT WINDOW */
 .window {
@@ -120,7 +135,7 @@ p {
   top: 5.5rem;
   left: 0;
   width: 100%;
-  background-color: #fffffa;
+  background-color: #fffff5;
   border-bottom: 1.5px solid black;
   z-index: 500;
 }
@@ -128,6 +143,11 @@ p {
 /* This class is added by JavaScript to show the menu (In-Place Expansion) */
 .mobile-menu-wrapper.is-open {
   display: block;
+}
+
+.mobile-nav-item:hover {
+  background-color: lightgoldenrodyellow;
+  font-weight: bold;
 }
 
 /* Remove the margin on window-container so it stays in place */
