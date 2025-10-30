@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 0;
+  margin-left: 18rem;
+  background-color: #fffff5;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+/* Project Grid */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+/* Opacity on project item hover */
+.opacity {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.opacity:hover {
+  opacity: 0.5;
+}
+
+/* Sizes Clouds Project */
+iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1150px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .project-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .project-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+  body {
+    margin-top: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

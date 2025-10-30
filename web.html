@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Anna Rizvi's Portfolio</title>
         <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="web.css">
         <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum Pen Script:wght@400&display=swap">
@@ -15,29 +16,20 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="media/yellow-star.svg">
-        <style>
-            body{
-                overflow-y: hidden; 
-            }
-        </style>
+        <style></style>
     </head>
     <body>
         <header class="mobile-header-fixed">
             <nav class="navigation-container">
-                <h1 class="anna-rizvi">
-                    Anna
+                <a href="index.html">
+                    <h1 class="anna-rizvi">
+                        Anna
                     Rizvi
-                </h1>
-                <p>
-                    designing,
-                    <br>
-                    developing,
-                    <br>
-                    but mostly touching grass
-                </p>
+                    </h1>
+                </a>
                 <div class="nav-general">
                     <a
-                        href="web.html"
+                        href="#"
                         id="web"
                         class="nav-item"
                         data-img="media/new-media/window-yellow.png"
@@ -73,7 +65,7 @@
         </header>
         <div id="fullScreenMenu" class="mobile-menu-wrapper">
             <div class="menu-links">
-                <a href="web.html" class="mobile-nav-item">Web</a>
+                <a href="#" class="mobile-nav-item">Web</a>
                 <a href="#" class="mobile-nav-item">Social</a>
                 <a href="#" class="mobile-nav-item">35mm</a>
                 <a href="about.html" class="mobile-nav-item">About</a>
@@ -84,42 +76,38 @@
                 </div>
             </div>
         </div>
-        <div class="window-container">
-            <img
-                src="media/new-media/window-all.png"
-                class="window"
-                id="mainImage"
-                alt="window"
-            >
-            <!-- START OF WEB PREVIEW POLAROIDS -->
-            <!-- DOOR POLAROID -->
-            <img src="media/Door.png" id="door-preview">
-            <!-- ANALOG POLAROID -->
-            <img src="media/analog.png" id="analog-preview">
-            <!-- STRUCTURE POLAROID -->
-            <img src="media/pixelstan.png" id="pixelstan-preview">
-            <!-- **************************** -->
-            <!--- START OF SOCIAL PREVIEW -->
-            <!-- SFML Preview -->
-            <img src="media/new-media/web-preview-polaroids/sfml-preview.png" id="sfml-preview">
-            <!-- Veera Preview -->
-            <img src="media/new-media/web-preview-polaroids/veera-white.png" id="veera-preview">
-            <!-- Priyanka Preview -->
-            <img src="media/new-media/web-preview-polaroids/priyanka-preview.png" id="priyanka-preview">
-            <!-- **************************** -->
-            <!--- START OF 35mm PREVIEW -->
-            <img src="media/new-media/web-preview-polaroids/IMG_1529.JPG" id="film1-preview">
-            <img src="media/new-media/web-preview-polaroids/IMG_0912.JPG" id="film2-preview">
-            <img src="media/new-media/web-preview-polaroids/IMG_3905.JPG" id="film3-preview">
-            <img src="media/new-media/web-preview-polaroids/IMG_3897.JPG" id="film4-preview">
-            <!-- **************************** -->
-            <!--- START OF About PREVIEW -->
-            <img src="media/new-media/web-preview-polaroids/about-anna.png" id="about-preview">
-        </div>
-        <div class="handwritten-note">
-            This website was handmade by me & is a fluid, everchanging space.
-            <br>
-            <i>Last updated - Oct 2025</i>
+        <!-- Project Grid -->
+        <div class="project-container">
+            <!-- Doors -->
+            <a href="doors-project.html" class="opacity">
+                <img src="media/Door_613x600.jpg">
+            </a>
+            <!-- Pixelstan -->
+            <a href="#" class="opacity">
+                <img src="media/pixelstan.jpg">
+            </a>
+            <!-- Radio Pakistan -->
+            <a href="#" class="opacity">
+                <img src="media/radiopakistan_613x596.jpg">
+            </a>
+            <!-- SwethaPraba -->
+            <a href="#" class="opacity">
+                <img src="media/swetha_613x600.jpg">
+            </a>
+            <!-- CSS Clouds Animation -->
+            <iframe src="screensaver/index.html" title="floated by"></iframe>
+            <!-- Bootstrap Analog -->
+            <a href="#" class="opacity">
+                <img src="media/analog.jpg">
+            </a>
+            <!-- Heirlooms -->
+            <a href="#" class="opacity">
+                <img src="media/daal-final_613x600.jpg">
+            </a>
+            <!-- Structure -->
+            <a href="#" class="opacity">
+                <img src="media/structure2_613x600.jpg">
+            </a>
         </div>
         <!-- General jQuery file -->
         <script src="jquery/jquery-3.7.1.min.js"></script>
