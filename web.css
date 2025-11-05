@@ -22,6 +22,34 @@ body {
   grid-row-gap: 5px;
 }
 
+.project-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Hover text styling */
+.hover-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: black;
+  font-family: "Comico";
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show text on hover */
+.project-item:hover .hover-text {
+  opacity: 1;
+}
+
 /* Opacity on project item hover */
 .opacity {
   opacity: 1;
@@ -29,7 +57,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 .opacity:hover {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 /* Sizes Clouds Project */

@@ -16,58 +16,65 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="media/yellow-star.svg">
-        <style></style>
     </head>
     <body>
         <header class="mobile-header-fixed">
             <nav class="navigation-container">
-                <a href="index.html">
-                    <h1 class="anna-rizvi">
-                        Anna
-                    Rizvi
-                    </h1>
+                <div class="fixed-bar">
+                    <a href="index.html">
+                        <h1 class="anna-rizvi">
+                            Anna Rizvi
+                        </h1>
+                    </a>
+                    <p class="intro">
+                        designing,
+                        <br>
+                        developing,
+                        <br>
+                        but mostly touching grass
+                    </p>
+                    <div class="nav-general">
+                        <a
+                            href="web.html"
+                            id="web"
+                            class="nav-item"
+                            data-img="media/new-media/window-yellow.png"
+                        >Web</a>
+                        <a
+                            href="#"
+                            id="social"
+                            class="nav-item"
+                            data-img="media/new-media/window-salmon.png"
+                        >Social</a>
+                        <a
+                            href="35mm.html"
+                            id="film"
+                            class="nav-item"
+                            data-img="media/new-media/window-pink.png"
+                        >35mm</a>
+                        <a
+                            href="about.html"
+                            id="about"
+                            class="nav-item"
+                            data-img="media/new-media/window-green.png"
+                        >About</a>
+                    </div>
+                </nav>
+                <a href="javascript:void(0);" class="open-icon" onclick="toggleMobileMenu()">
+                    <span class="dot-line dot-1"></span>
+                    <span class="dot-line dot-2"></span>
+                    <span class="dot-line dot-3"></span>
                 </a>
-                <div class="nav-general">
-                    <a
-                        href="#"
-                        id="web"
-                        class="nav-item"
-                        data-img="media/new-media/window-yellow.png"
-                    >Web</a>
-                    <a
-                        href="#"
-                        id="social"
-                        class="nav-item"
-                        data-img="media/new-media/window-salmon.png"
-                    >Social</a>
-                    <a
-                        href="35mm.html"
-                        id="film"
-                        class="nav-item"
-                        data-img="media/new-media/window-pink.png"
-                    >35mm</a>
-                    <a
-                        href="about.html"
-                        id="about"
-                        class="nav-item"
-                        data-img="media/new-media/window-green.png"
-                    >About</a>
-                </div>
-            </nav>
-            <a href="javascript:void(0);" class="open-icon" onclick="toggleMobileMenu()">
-                <span class="dot-line dot-1"></span>
-                <span class="dot-line dot-2"></span>
-                <span class="dot-line dot-3"></span>
-            </a>
-            <a href="javascript:void(0);" class="close-icon" onclick="toggleMobileMenu()">
-                <i class="fa fa-times"></i>
-            </a>
-        </header>
+                <a href="javascript:void(0);" class="close-icon" onclick="toggleMobileMenu()">
+                    <i class="fa fa-times"></i>
+                </a>
+            </header>
+        </div>
         <div id="fullScreenMenu" class="mobile-menu-wrapper">
             <div class="menu-links">
-                <a href="#" class="mobile-nav-item">Web</a>
+                <a href="web.html" class="mobile-nav-item">Web</a>
                 <a href="#" class="mobile-nav-item">Social</a>
-                <a href="#" class="mobile-nav-item">35mm</a>
+                <a href="35mm.html" class="mobile-nav-item">35mm</a>
                 <a href="about.html" class="mobile-nav-item">About</a>
                 <div class="social-icons">
                     <i class="fa fa-github"></i>
@@ -79,35 +86,93 @@
         <!-- Project Grid -->
         <div class="project-container">
             <!-- Doors -->
-            <a href="doors-project.html" class="opacity">
-                <img src="media/Door_613x600.jpg">
-            </a>
+            <div class="project-item">
+                <a
+                    href="https://annarzv.github.io/portfolio/passion/passion.html"
+                    class="opacity"
+                    target="_blank"
+                    alt="White door illustration with blue background"
+                    title="Doors Project"
+                >
+                    <img src="media/Door_613x600.jpg">
+                </a>
+                <div class="hover-text">Doors | HTML, CSS, JS</div>
+            </div>
             <!-- Pixelstan -->
-            <a href="#" class="opacity">
-                <img src="media/pixelstan.jpg">
-            </a>
+            <div class="project-item">
+                <a
+                    href="#"
+                    class="opacity"
+                    title="Pixelstan Project"
+                    alt="Architechture in Pakistan"
+                >
+                    <img src="media/pixelstan.jpg">
+                </a>
+                <div class="hover-text">Pixelstan | HTML, CSS, JS</div>
+            </div>
             <!-- Radio Pakistan -->
-            <a href="#" class="opacity">
-                <img src="media/radiopakistan_613x596.jpg">
-            </a>
+            <div class="project-item">
+                <a
+                    href="#"
+                    class="opacity"
+                    title="Radio Pakistan Project"
+                    alt="Vintage desi album art"
+                >
+                    <img src="media/radiopakistan_613x596.jpg">
+                </a>
+                <div class="hover-text">Radio Pakistan | HTML & CSS</div>
+            </div>
             <!-- SwethaPraba -->
-            <a href="#" class="opacity">
-                <img src="media/swetha_613x600.jpg">
-            </a>
+            <div class="project-item">
+                <a
+                    href="https://swethapraba.com/"
+                    class="opacity"
+                    target="_blank"
+                    alt="Swetha Prabakaran in dance pose"
+                    title="Swetha's Portfolio Project"
+                >
+                    <img src="media/swetha_613x600.jpg">
+                </a>
+                <div class="hover-text">Swetha's Portfolio | HTML/CSS, JS, Bootstrap</div>
+            </div>
             <!-- CSS Clouds Animation -->
-            <iframe src="screensaver/index.html" title="floated by"></iframe>
+            <iframe src="screensaver/index.html" alt="CSS cloud animation"></iframe>
             <!-- Bootstrap Analog -->
-            <a href="#" class="opacity">
-                <img src="media/analog.jpg">
-            </a>
+            <div class="project-item">
+                <a
+                    href="#"
+                    class="opacity"
+                    title="Analog Bootstrap Project"
+                    alt="35mm film camera for Bootstrap project"
+                >
+                    <img src="media/analog.jpg">
+                </a>
+                <div class="hover-text">Analog | HTML & Bootstrap</div>
+            </div>
             <!-- Heirlooms -->
-            <a href="#" class="opacity">
-                <img src="media/daal-final_613x600.jpg">
-            </a>
+            <div class="project-item">
+                <a
+                    href="#"
+                    class="opacity"
+                    title="Heirlooms Project"
+                    alt="Pot of lentils for Heirlooms project"
+                >
+                    <img src="media/daal-final_613x600.jpg">
+                </a>
+                <div class="hover-text">Heirlooms | HTML, CSS, JS</div>
+            </div>
             <!-- Structure -->
-            <a href="#" class="opacity">
-                <img src="media/structure2_613x600.jpg">
-            </a>
+            <div class="project-item">
+                <a
+                    href="#"
+                    class="opacity"
+                    title="Structure Project"
+                    alt="Highway in Karachi with people on top of cars"
+                >
+                    <img src="media/structure2_613x600.jpg">
+                </a>
+                <div class="hover-text">Structure | HTML & CSS</div>
+            </div>
         </div>
         <!-- General jQuery file -->
         <script src="jquery/jquery-3.7.1.min.js"></script>

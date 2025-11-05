@@ -21,8 +21,6 @@ html {
 .header-container {
   display: flex;
   flex-direction: column;
-  /* border-bottom: 1px solid black; */
-  /* background-color: rgb(255, 252, 229); */
   margin-top: 2rem;
 }
 
@@ -55,9 +53,6 @@ html {
 
 /* Anna Rizvi */
 .name {
-  /* background-color: lightblue; */
-  /* font-family: "Outfit"; */
-  /* font-family: "Nanum Pen Script"; */
   font-size: 150%;
 }
 
