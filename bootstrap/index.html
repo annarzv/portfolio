@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+            crossorigin="anonymous"
+        >
+        <link href="styles.css" rel="mystylesheet">
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"
+        ></script>
+        <title>Film Portfolio</title>
+        <style>
+           body {
+                background-image: url(images/bullet.jpg); 
+                background-size: 2100% 100%;
+             }
+             .cursor-pointer {
+  cursor: pointer;
+}
+        </style>
+    </head>
+    <body>
+        <h1 class="display-1 text-center mt-5 text-danger">
+            <b>(ana)log</b>
+        </h1>
+        <div class="container text-center text-uppercase fs-5">
+            <div class="row">
+                <div class="col mt-5">
+                    <a href="photos.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">photos</a>
+                </div>
+                <div class="col mt-5">
+                    <a href="about.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">about</a>
+                </div>
+                <div class="col mt-5">
+                    <a href="contact.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">contact</a>
+                </div>
+            </div>
+        </div>
+        <img
+            src="images/camera-closed.png"
+            class="mx-auto d-block img-fluid cursor-pointer"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+        >
+        >
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">welcome to (ana)log!</h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        thanks for being here :D
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

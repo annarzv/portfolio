@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+            crossorigin="anonymous"
+        >
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <title>About</title>
+        <style>
+            
+            .mt-6 {
+            margin-top: 6rem; /* Or any other value you need */
+             }
+             .mx-6 {
+                margin-left: 40%;
+             }
+             .ms-6 {
+                margin-left: 20%;
+             }
+             .trial-container {
+              background-color: aqua;
+             }
+        </style>
+    </head>
+    <body>
+        <h1 class="display-1 text-center mt-5 link-danger">
+            <a href="index.html" class="link-danger link-underline link-underline-opacity-0">(ana)log</a>
+        </h1>
+        <div class="container text-center text-uppercase fs-5">
+            <div class="row">
+                <div class="col mt-5">
+                    <a href="photos.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">photos</a>
+                </div>
+                <div class="col mt-5">
+                    <a href="about.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">about</a>
+                </div>
+                <div class="col mt-5">
+                    <a href="contact.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">contact</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container mt-6">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/Wall Prints/Untitled_Artwork+2.jpg" style="max-width: 100%; height: 350px;" class="mx-auto d-block ">
+                    <!-- Content for the first column -->
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="text-center link-danger me-5 ms-1">about me.</h1>
+                    <p class="text-center fs-5 mt-4 mx-4 me-5 ">Chasing light and stories with my trusty film cameras. You'll find a little bit of everything here – faces, landscapes, those everyday glimpses that feel like something more. It's all about the beauty in the imperfect, the soul in the grain. Come wander through the analog world with me.</p>
+                    <button
+                        type="button"
+                        class="btn btn-danger text-center fs-5 mt-4 mx-6 me-5"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="illustration inspo: @wiwadd"
+                    >
+                        info
+                    </button>
+                    <!-- Content for the second column -->
+                </div>
+            </div>
+        </div>
+        <script>
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+const tooltipList = tooltipTriggerList.map(tooltipTriggerElement => new bootstrap.Tooltip(tooltipTriggerElement))
+        </script>
+        <!-- <button
+            type="button"
+            class="btn btn-danger ms-6"
+            data-toggle="collapse"
+            data-target="#collapsibleList"
+            data-bs-spy="scroll"
+        >
+            favorite film
+        </button> -->
+        <div id="collapsibleList" class="collapse ms-6">
+            <ul class="text-danger list-unstyled ">
+                <li>Portra 400</li>
+                <li>Kodak Gold</li>
+                <li>Karmir 200</li>
+                <li>Dubble Apollo</li>
+                <li>Dubble Bubblegum</li>
+                <li>Kodak Ultra 400</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -30,7 +30,9 @@ body {
 .project-item img {
   display: block;
   width: 100%;
-  height: auto;
+  /* height: auto; */
+  height: 100%; /* Add this line */
+  object-fit: cover; /* Add this line to ensure the image covers the area without distortion */
 }
 
 /* Hover text styling */

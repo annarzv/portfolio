@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Punjab</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/styles2.css">
+    </head>
+    <style>
+
+    .portfolio-item img {
+    border-radius: 5px;
+        }
+    .regionName {
+        font-size: 70px;
+        color:#0b6f4a;
+        margin-top: -5%;
+        padding-bottom: 2%;
+        }
+        .regionName:hover{
+        text-decoration: underline;
+        text-underline-offset: 20px;
+        cursor: pointer;
+        }
+        svg {
+            cursor: pointer;
+            }
+    </style>
+    <header>
+        <!-- Navigation Header (Including Logo) -->
+        <nav class="navbar">
+            <a href="index.html" class="logo">pixel • stan</a>
+            <!-- 3 Navigation Links List -->
+            <ul class="nav-links">
+                <li>
+                    <!-- Region Dropdown -->
+                    <div class="dropdown">
+                        <a href="#">
+                            <button class="button ">Region</button>
+                        </a>
+                        <!-- Region Dropdown Content -->
+                        <div class="dropdown-content">
+                            <a href="sindh-test.html">Sindh</a>
+                            <a href="#">Balochistan</a>
+                            <a href="punjab.html">Punjab</a>
+                            <a href="kpk.html">KPK</a>
+                            <a href="#">Azad Kashmir</a>
+                            <a href="#">Gilgit Baltistan</a>
+                        </li>
+                    </div>
+                </div>
+                <li>
+                    <a href="about.html">
+                        <button class="button">About</button>
+                    </a>
+                </li>
+                <li>
+                    <a id="modal-trigger" href="#">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="45"
+                            height="45"
+                            fill="#087d31"
+                            class="bi bi-question-circle-fill nav-links nav-bar"
+                            viewBox="0 0 16 16"
+                            type="svg"
+                            class="bi bi-question-circle-fill"
+                            data-toggle="modal"
+                            data-target="#myModal"
+                        >
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                        </svg>
+                    </a>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <p>
+                                    <div id="svg-control">
+                                        pixelstan tools
+                                    </p>
+                                </div>
+                                <span class="close">&times;</span>
+                            </div>
+                            <div class="modal-body">
+                                <p style="font-family: 'Courier New', Courier, monospace;">
+                                    Contact
+                                </p>
+                                <p style="font-family: 'Courier New', Courier, monospace;">About</p>
+                                <p style="font-family: 'Courier New', Courier, monospace;">Terms & Conditions</p>
+                                <p style="font-family: 'Courier New', Courier, monospace;">Log in</p>
+                                <p style="font-family: 'Courier New', Courier, monospace;">Sign up</p>
+                            </div>
+                            <div class="modal-footer">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="30"
+                                    height="30"
+                                    fill="green"
+                                    class="bi bi-instagram"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="30"
+                                    height="30"
+                                    fill="green"
+                                    class="bi bi-youtube"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                </svg>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="30"
+                                    height="30"
+                                    fill="green"
+                                    class="bi bi-pinterest"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            // JS for Site Map Modal 
+            const trigger = document.getElementById('modal-trigger');
+            const modal = document.getElementById('myModal');
+            const closeButton = document.getElementsByClassName('close')[0];
+        
+            trigger.addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                modal.style.display = 'inline-block'; // Or other method to show the modal
+            });
+        
+            closeButton.addEventListener('click', () => {
+                modal.style.display = 'none'; // Hide the modal
+            });
+        
+            // Optionally, also hide the modal when clicking outside of it
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        </script>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="overlay">
+            <div class="overlay-content">
+                <details>
+                    <summary>
+                        <b>Regions</b>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-caret-down-fill"
+                            viewBox="0 0 16 16"
+                        >
+                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                        </svg>
+                    </summary>
+                    <ul>
+                        <a href="sindh-test.html">
+                            <li>
+                                SINDH
+                            </li>
+                        </a>
+                        <a href="punjab.html">
+                            <li>
+                                Punjab
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                Balochistan
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                Azad Kashmir
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                Gilgit Baltistan
+                            </li>
+                        </a>
+                        <a href="kpk.html">
+                            <li>
+                                Khyber PakhtunKhwa
+                            </li>
+                        </a>
+                    </ul>
+                </details>
+                <a href="about.html">
+                    <b>About</b>
+                </a>
+            </div>
+        </div>
+    </header>
+    <body>
+        <script>
+        // HAMBURGER MENU
+        const hamburgerIcon = document.querySelector(".hamburger-menu");
+        const overlay = document.querySelector(".overlay");
+        
+        hamburgerIcon.addEventListener("click", openMenu);
+        
+        function openMenu() {
+        hamburgerIcon.classList.toggle("open");
+        overlay.classList.toggle("open");
+        }
+        </script>
+        <div class="separator"></div>
+        <!-- TOP OF RESPONSIVE PHOTO GRID -->
+        <section id="projects">
+            <div class="portfolio-container">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>Punjab</li>
+                </ul>
+                <a href="punjab.html">
+                    <h1 class="regionName">Punjab</h1>
+                </a>
+                <!-- FILTER CATEGORIES -->
+                <div class="portfolio-row filter-wrap">
+                    <div class="portfolio-filter-nav">
+                        <button type="button" data-id="all" class="btn active">
+                            All
+                        </button>
+                        <button type="button" data-id="design" class="btn">
+                            Design
+                        </button>
+                        <button type="button" data-id="lifestyle" class="btn">
+                            Lifestyle
+                        </button>
+                        <button type="button" data-id="architecture" class="btn">
+                            Architecture
+                        </button>
+                        <button type="button" data-id="food" class="btn">
+                            Food
+                        </button>
+                        <button type="button" data-id="language" class="btn">
+                            Language
+                        </button>
+                        <button type="button" data-id="landmarks" class="btn">
+                            Landmarks
+                        </button>
+                        <button type="button" data-id="geography" class="btn">
+                            Geography
+                        </button>
+                        <button type="button" data-id="fashion" class="btn">
+                            Fashion
+                        </button>
+                    </div>
+                </div>
+                <!-- PHOTO GRID -->
+                <div class="portfolio-wrapper">
+                    <!-- COLUMN 1 -->
+                    <div class="portfolio-col">
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/hatif-naqvi/punjab/DSCF9575.jpeg" alt="hatif-naqvi">
+                            <div class="overlay-text">
+                                <p>Hatif N.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/AEAE8CCA-ABB2-4F30-8BE0-18BC57D736E5.jpeg" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/7CB0FBBB-1605-4350-AA81-F6F2FD6B174A.jpeg" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/hatif-naqvi/punjab/DSCF9591.jpeg" alt="hatif-naqvi">
+                            <div class="overlay-text">
+                                <p>Hatif N.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/hatif-naqvi/punjab/DSCF9836.jpeg" alt="hatif-naqvi">
+                            <div class="overlay-text">
+                                <p>Hatif N.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle fashion">
+                            <img src="../images/shared-photos/ayesha-paracha/punjab/image0.jpeg" alt="ayesha-paracha">
+                            <div class="overlay-text">
+                                <p>Ayesha P.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture design">
+                            <img src="../images/shared-photos/ayesha-paracha/punjab/image1.jpeg" alt="ayesha-paracha">
+                            <div class="overlay-text">
+                                <p>Ayesha P.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/0BF997C2-1D6E-4325-A829-DF6290C5E16D.jpeg" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/one.png" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture lifestyle">
+                            <img src="../images/shared-photos/ayesha-paracha/punjab/image8.jpeg" alt="ayesha-paracha">
+                            <div class="overlay-text">
+                                <p>Ayesha P.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/FE745AAD-3CE0-4EFC-889A-8149D7391E16.jpeg" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/safina-bibi/punjab/IMG_1666_Original.jpeg" alt="safina-bibi">
+                            <div class="overlay-text">
+                                <p>Safina B.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/safina-bibi/punjab/IMG_2101_Original.jpeg" alt="safina-bibi">
+                            <div class="overlay-text">
+                                <p>Safina B.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture lifestyle">
+                            <img src="../images/shared-photos/safina-bibi/punjab/IMG_8948.jpeg" alt="safina-bibi">
+                            <div class="overlay-text">
+                                <p>Safina B.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle architecture design">
+                            <img src="../images/shared-photos/rida-ali/punjab/05319506-66A5-4D3F-8BF0-8923F4A670D0.jpeg" alt="rida-ali">
+                            <div class="overlay-text">
+                                <p>Rida A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture design">
+                            <img src="../images/shared-photos/rida-ali/punjab/1A0620D7-BFBF-4E56-B461-9D46BFEDA179.jpeg" alt="rida-ali">
+                            <div class="overlay-text">
+                                <p>Rida A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item landmarks architecture design">
+                            <img src="../images/shared-photos/rida-ali/punjab/360BB30C-2593-46C7-A13D-E61D8DBE070A.jpeg" alt="rida-ali">
+                            <div class="overlay-text">
+                                <p>Rida A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/sarah-owais/punjab/IMG_1980.jpg" alt="sarah-owais">
+                            <div class="overlay-text">
+                                <p>Sarah O.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/sarah-owais/punjab/IMG_1984.jpg" alt="sarah-owais">
+                            <div class="overlay-text">
+                                <p>Sarah O.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture landmarks">
+                            <img src="../images/shared-photos/sarah-owais/punjab/IMG_2018.jpg" alt="sarah-owais">
+                            <div class="overlay-text">
+                                <p>Sarah O.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture landmarks">
+                            <img src="../images/shared-photos/sarah-owais/punjab/IMG_2025.jpg">
+                            <div class="overlay-text">
+                                <p>Sarah O.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture landmarks">
+                            <img src="../images/shared-photos/sarah-owais/punjab/IMG_2026.jpg" alt="sarah-owais">
+                            <div class="overlay-text">
+                                <p>Sarah O.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item fashion">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/three.png" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/two.png" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========================= -->
+                    <!-- COLUMN 2 -->
+                    <div class="portfolio-col">
+                        <div class="position-relative portfolio-item architecture landmarks desig architecture">
+                            <img src="../images/shared-photos/hatif-naqvi/punjab/DSCF9681.jpeg" alt="hatif-naqvi">
+                            <div class="overlay-text">
+                                <p>Hatif N.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item geography">
+                            <img src="../images/shared-photos/hatif-naqvi/punjab/DSCF9741.jpeg" alt="hatif-naqvi">
+                            <div class="overlay-text">
+                                <p>Hatif N.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item landmarks architecture lifestyle">
+                            <img src="../images/shared-photos/hatif-naqvi/punjab/DSCF9858.jpeg" alt="hatif-naqvi">
+                            <div class="overlay-text">
+                                <p>Hatif N.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture design">
+                            <img src="../images/shared-photos/ayesha-paracha/punjab/image2.jpeg" alt="ayesha-paracha">
+                            <div class="overlay-text">
+                                <p>Ayesha P.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture">
+                            <img src="../images/shared-photos/ayesha-paracha/punjab/image3.jpeg" alt="ayesha-paracha">
+                            <div class="overlay-text">
+                                <p>Ayesha P.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/safina-bibi/punjab/IMG_2120_Original.jpeg" alt="safina-bibi">
+                            <div class="overlay-text">
+                                <p>Safina B.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/safina-bibi/punjab/IMG_2130_Original.jpeg" alt="safina-bibi">
+                            <div class="overlay-text">
+                                <p>Safina B.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle">
+                            <img src="../images/shared-photos/safina-bibi/punjab/IMG_4835.jpeg" alt="safina-bibi">
+                            <div class="overlay-text">
+                                <p>Safina B.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle architecture">
+                            <img src="../images/shared-photos/rida-ali/punjab/43B94F2F-F9E9-415B-A7E6-FC351ADD7D8D.jpeg" alt="rida-ali">
+                            <div class="overlay-text">
+                                <p>Rida A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle architecture">
+                            <img src="../images/shared-photos/rida-ali/punjab/57F2AAE3-0EAF-408E-BDC5-4FAD5193D98D.jpeg" alt="rida-ali">
+                            <div class="overlay-text">
+                                <p>Rida A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture">
+                            <img src="../images/shared-photos/rida-ali/punjab/7308EB06-1DA1-4FC8-BFE9-6A5DAAA22ED7.jpeg" alt="rida-ali">
+                            <div class="overlay-text">
+                                <p>Rida A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item geography">
+                            <img src="../images/shared-photos/sarah-owais/punjab/IMG_2200.jpg" alt="sarah-owais">
+                            <div class="overlay-text">
+                                <p>Sarah O.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item geography">
+                            <img src="../images/shared-photos/sarah-owais/punjab/IMG_2216.jpg" alt="sarah-owais">
+                            <div class="overlay-text">
+                                <p>Sarah O.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle">
+                            <img src="../images/shared-photos/danish-j/punjab/FD4F4B50-5025-4027-8DC9-DAFD7A723511.jpeg" alt="danish-j">
+                            <div class="overlay-text">
+                                <p>Danish J.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture">
+                            <img src="../images/shared-photos/eman-j/punjab/02E91AB0-A610-4AE4-ABB5-215497ED1E33.jpeg" alt="eman-j">
+                            <div class="overlay-text">
+                                <p>Eman J.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture">
+                            <img src="../images/shared-photos/eman-j/punjab/3AEDD1A8-7E7F-4858-AB45-20E4CF5F1755.jpeg" alt="eman-j">
+                            <div class="overlay-text">
+                                <p>Eman J.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item landmarks architecture">
+                            <img src="../images/shared-photos/mariya-ali/punjab/second.png" alt="mariya-ali">
+                            <div class="overlay-text">
+                                <p>Mariya A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item food">
+                            <img src="../images/shared-photos/mariya-ali/punjab/third.png" alt="mariya-ali">
+                            <div class="overlay-text">
+                                <p>Mariya A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item landmarks architecture">
+                            <img src="../images/shared-photos/mariya-ali/punjab/fourth.png" alt="mariya-ali">
+                            <div class="overlay-text">
+                                <p>Mariya A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item fashion">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/five.png" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture design">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/four.png" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture design">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/six.png" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/0BF997C2-1D6E-4325-A829-DF6290C5E16D.jpeg" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/148FC1A5-20B2-4AAD-AAD0-EA7FB2D93A50.jpeg" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/mahum-qazi/punjab/44C755BC-0862-40F2-97B1-12518B2E0FCA.jpeg" alt="mahum-qazi">
+                            <div class="overlay-text">
+                                <p>Mahum Q.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========================= -->
+                    <!-- COLUMN 3 -->
+                    <div class="portfolio-col">
+                        <div class="position-relative portfolio-item architecture lifestyle">
+                            <img src="../images/shared-photos/hatif-naqvi/punjab/DSCF9685 copy.jpeg" alt="hatif-naqvi">
+                            <div class="overlay-text">
+                                <p>Hatif N.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item food lifestyle">
+                            <img src="../images/shared-photos/hatif-naqvi/punjab/DSCF9707.jpeg" alt="hatif-naqvi">
+                            <div class="overlay-text">
+                                <p>Hatif N.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle">
+                            <img src="../images/shared-photos/hatif-naqvi/punjab/DSCF9870.jpeg" alt="hatif-naqvi">
+                            <div class="overlay-text">
+                                <p>Hatif N.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item geography">
+                            <img src="../images/shared-photos/mohib-r/punjab/2795E1DC-FC2C-47D0-993F-7BDDFD46B149.jpeg" alt="mohib-r">
+                            <div class="overlay-text">
+                                <p>Mohib R.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/ayesha-paracha/punjab/image4.jpeg" alt="ayesha-paracha">
+                            <div class="overlay-text">
+                                <p>Ayesha P.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/ayesha-paracha/punjab/image5.jpeg" alt="ayesha-paracha">
+                            <div class="overlay-text">
+                                <p>Ayesha P.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture design">
+                            <img src="../images/shared-photos/ayesha-paracha/punjab/image6.jpeg" alt="ayesha-paracha">
+                            <div class="overlay-text">
+                                <p>Ayesha P.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture lifestyle landmarks">
+                            <img src="../images/shared-photos/ayesha-paracha/punjab/image7.jpeg" alt="ayesha-paracha">
+                            <div class="overlay-text">
+                                <p>Ayesha P.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/safina-bibi/punjab/IMG_4836.jpeg" alt="safina-bibi">
+                            <div class="overlay-text">
+                                <p>Safina B.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle geography">
+                            <img src="../images/shared-photos/safina-bibi/punjab/IMG_4837.jpeg" alt="safina-bibi">
+                            <div class="overlay-text">
+                                <p>Safina B.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle">
+                            <img src="../images/shared-photos/safina-bibi/punjab/IMG_7303.jpeg" alt="safina-bibi">
+                            <div class="overlay-text">
+                                <p>Safina B.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle architecture">
+                            <img src="../images/shared-photos/rida-ali/punjab/81310E62-4F67-4E9B-839B-5E87BFCEBC81.jpeg" alt="rida-ali">
+                            <div class="overlay-text">
+                                <p>Rida A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle architecture landmarks">
+                            <img src="../images/shared-photos/rida-ali/punjab/8EDF26B6-C9D5-47C5-A647-3D273390743F.jpeg" alt="rida-ali">
+                            <div class="overlay-text">
+                                <p>Rida A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/rida-ali/punjab/9ED1C7B0-1B1E-4B1B-BED3-F654A066D36B.jpeg" alt="rida-ali">
+                            <div class="overlay-text">
+                                <p>Rida A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/sarah-owais/punjab/IMG_1723.jpg" alt="sarah-owais">
+                            <div class="overlay-text">
+                                <p>Sarah O.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/sarah-owais/punjab/IMG_1732.jpg" alt="sarah-owais">
+                            <div class="overlay-text">
+                                <p>Sarah O.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item design architecture">
+                            <img src="../images/shared-photos/sarah-owais/punjab/IMG_1933.jpg" alt="sarah-owais">
+                            <div class="overlay-text">
+                                <p>Sarah O.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/eman-j/punjab/41689A27-30B0-454B-98ED-386B42BDAFB2.jpeg" alt="eman-j">
+                            <div class="overlay-text">
+                                <p>Eman J.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture">
+                            <img src="../images/shared-photos/eman-j/punjab/B17EDC1A-19B2-4F3E-B670-F9E7B54D527C.jpeg" alt="eman-j">
+                            <div class="overlay-text">
+                                <p>Eman J.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item lifestyle">
+                            <img src="../images/shared-photos/eman-j/punjab/BFF71F95-F6BA-432C-94D0-183EF8042F2C.jpeg" alt="eman-j">
+                            <div class="overlay-text">
+                                <p>Eman J.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture">
+                            <img src="../images/shared-photos/eman-j/punjab/F7C7ABCC-C7A4-4D3C-AAC6-94C54B4AC9CA.jpeg" alt="eman-j">
+                            <div class="overlay-text">
+                                <p>Eman J.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item geography">
+                            <img src="../images/shared-photos/batool-a/punjab/63F23F44-2D2E-493D-91FA-E0BC6D268E43.png" alt="batool-a">
+                            <div class="overlay-text">
+                                <p>Batool A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item architecture landmarks">
+                            <img src="../images/shared-photos/mariya-ali/punjab/first.png" alt="mariya-ali">
+                            <div class="overlay-text">
+                                <p>Mariya A.</p>
+                            </div>
+                        </div>
+                        <div class="position-relative portfolio-item geography">
+                            <img src="../images/shared-photos/mohib-r/punjab/992BCBA6-A3EE-4C80-A8A2-5936ADBAB835.jpeg" alt="mohib-r">
+                            <div class="overlay-text">
+                                <p>Mohib R.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="../js/script.js"></script>
+        <script src="../js/scripts.js"></script>
+    </body>
+</html>

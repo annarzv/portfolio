@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form test</title>
+    </head>
+    <body>
+        <div class="background-about">
+            <div class="background-about2">
+                <form class="ms-5 mt-5 me-5 ">
+                    <h2 class="mt-5 mb-4">Say hi!</h2>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input
+                            type="email"
+                            class="form-control mt-3 mr-3"
+                            id="email"
+                            name="email"
+                            placeholder="Enter email"
+                        >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input
+                            type="text"
+                            class="form-control mt-3 mr-3"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                        >
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea
+                            class="form-control mt-3 mr-3"
+                            id="message"
+                            name="message"
+                            placeholder="Enter your message"
+                        ></textarea>
+                    </div>
+                    <button type="button" onclick="sendMail()" class="submit-button">Submit</button>
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

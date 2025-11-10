@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "work2";
+  src: url(/css/Work_Sans/WorkSans-VariableFont_wght.ttf);
+  font-weight: 400;
+}
+
+/*======= Universal CSS Properties =======*/
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+body {
+  font-family: work2;
+}
+
+/* ======= Wraper ======== */
+
+.portfolio-container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.portfolio-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ========= Style for project section ====== */
+
+#projects {
+  padding: 50px 0;
+}
+
+.filter-wrap {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.portfolio-wrapper .portfolio-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ======= Styling for category filters  ======= */
+
+/* Styling for category: DESIGN */
+.portfolio-item.design img {
+  border-radius: 5px;
+  height: auto;
+}
+/* Styling for category: LIFESTYLE */
+.portfolio-item.lifestyle img {
+  border-radius: 5px;
+  height: auto;
+}
+/* Styling for category: ARCHITECTURE */
+.portfolio-item.architecture img {
+  border-radius: 5px;
+  height: auto;
+}
+
+/* Styling for category: FOOD */
+.portfolio-item.food img {
+  border-radius: 5px;
+  height: auto;
+}
+/* Styling for category: LANGUAGE */
+.portfolio-item.language img {
+  border-radius: 5px;
+  height: auto;
+}
+/* Styling for category: LANDMARKS */
+.portfolio-item.landmarks img {
+  border-radius: 5px;
+  height: auto;
+}
+/* Styling for category: GEOGRAPHY */
+.portfolio-item.geography img {
+  border-radius: 5px;
+  height: auto;
+}
+/* Styling for category: CLOTHING */
+.portfolio-item.fashion img {
+  border-radius: 5px;
+  height: auto;
+}
+.portfolio-item {
+  cursor: pointer;
+}
+
+.portfolio-item.hide {
+  display: none;
+}
+
+.portfolio-item.show {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ========= Button ====== */
+
+.btn {
+  position: relative;
+  padding: 15px 32px;
+  background-color: #ffffff;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  line-height: 10px;
+  color: #087d31;
+  cursor: pointer;
+  border: 2px solid #087d31;
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  transition: 0.4s;
+}
+
+.btn:not(:last-child) {
+  margin-right: 15px;
+}
+
+.btn:hover,
+.btn.active {
+  background-color: rgb(244, 251, 189);
+  color: #0d500f;
+}
+
+/*---------------- Large devices (desktops, 992px and up)  -----------*/
+
+@media (min-width: 768px) {
+  .filter-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .portfolio-wrapper {
+    flex-direction: row;
+  }
+}
