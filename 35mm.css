@@ -13,6 +13,10 @@ body {
   padding: 32px;
 }
 
+.intro {
+  font-size: 95%;
+}
+
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;

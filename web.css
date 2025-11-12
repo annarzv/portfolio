@@ -13,6 +13,10 @@ body {
   padding: 32px;
 }
 
+.intro {
+  font-size: 95%;
+}
+
 /* Project Grid */
 .project-container {
   display: grid;
