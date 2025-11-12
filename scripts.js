@@ -1,19 +1,19 @@
 // JS to swap image on hover
-const navItems = document.querySelectorAll(".nav-item");
-const mainImage = document.getElementById("mainImage");
-const defaultImg = mainImage.src;
+// const navItems = document.querySelectorAll(".nav-item");
+// const mainImage = document.getElementById("mainImage");
+// const defaultImg = mainImage.src;
 
-navItems.forEach((item) => {
-  const newImg = item.getAttribute("data-img");
+// navItems.forEach((item) => {
+//   const newImg = item.getAttribute("data-img");
 
-  item.addEventListener("mouseenter", () => {
-    mainImage.src = newImg;
-  });
+//   item.addEventListener("mouseenter", () => {
+//     mainImage.src = newImg;
+//   });
 
-  item.addEventListener("mouseleave", () => {
-    mainImage.src = defaultImg;
-  });
-});
+//   item.addEventListener("mouseleave", () => {
+//     mainImage.src = defaultImg;
+//   });
+// });
 
 // Mobile nav Toggle - REMOVES myLinks and TOGGLES the new menu
 function toggleMobileMenu() {

@@ -88,22 +88,6 @@ p {
   font-weight: 600;
 }
 
-#web:hover {
-  background-color: #fef16a;
-}
-
-#social:hover {
-  background-color: lightcoral;
-}
-
-#film:hover {
-  background-color: #ffb1e4;
-}
-
-#about:hover {
-  background-color: #bbfed3;
-}
-
 /* NAME ONLY */
 .anna-rizvi {
   width: 200px;
