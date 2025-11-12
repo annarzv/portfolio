@@ -118,6 +118,7 @@ p {
   width: auto;
   display: flex;
   margin: -5rem auto;
+  object-fit: contain;
 }
 
 /* --- MOBILE NAVIGATION STYLES --- */
@@ -148,7 +149,6 @@ p {
 
 /* Remove the margin on window-container so it stays in place */
 .tree-container {
-  /* Reset any unwanted margin/padding that was pushing it down */
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -444,7 +444,7 @@ p {
     font-size: larger;
   }
   .tree {
-    height: 600px;
+    height: 700px;
     max-width: 100%;
     margin: 10rem auto;
   }
@@ -453,7 +453,7 @@ p {
 @media (max-width: 450px) {
   .tree {
     top: 55%;
-    height: 580px;
+    height: 500px;
     width: auto;
   }
 }
