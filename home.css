@@ -444,8 +444,8 @@ p {
     font-size: larger;
   }
   .tree {
-    height: 620px;
-    max-width: auto;
+    height: 600px;
+    max-width: 100%;
     margin: 10rem auto;
   }
 }
