@@ -452,7 +452,8 @@ p {
 
 @media (max-width: 450px) {
   .tree {
-    top: 40%;
-    height: 610px;
+    top: 55%;
+    height: 580px;
+    width: auto;
   }
 }
