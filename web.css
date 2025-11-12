@@ -27,12 +27,29 @@ body {
   overflow: hidden;
 }
 
-.project-item img {
+.project-item img,
+.project-item video {
   display: block;
   width: 100%;
   /* height: auto; */
-  height: 100%; /* Add this line */
-  object-fit: cover; /* Add this line to ensure the image covers the area without distortion */
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-item video.project-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* show entire video without cropping */
+  object-position: center;
+  display: block;
+  background-color: #fdde68; /* optional, adds black bars instead of blank space */
+
+  transition: opacity 0.3s ease;
+}
+
+/* Match hover opacity effect with images */
+.project-item a.opacity:hover video.project-video {
+  opacity: 0.6;
 }
 
 /* Hover text styling */

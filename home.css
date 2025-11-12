@@ -106,21 +106,18 @@ p {
 
 /* NAME ONLY */
 .anna-rizvi {
-  padding: 10px 15px;
-  text-decoration: none;
-  color: black;
+  width: 200px;
+  margin-left: -0.4rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
-/* .anna-rizvi:hover {
-  text-decoration: underline;
-  text-underline-offset: 6px;
-} */
 
-/* DEFAULT WINDOW */
-.window {
-  height: 700px;
+/* DEFAULT TREE */
+.tree {
+  height: 900px;
   width: auto;
   display: flex;
-  margin: 7rem auto;
+  margin: -5rem auto;
 }
 
 /* --- MOBILE NAVIGATION STYLES --- */
@@ -150,7 +147,7 @@ p {
 }
 
 /* Remove the margin on window-container so it stays in place */
-.window-container {
+.tree-container {
   /* Reset any unwanted margin/padding that was pushing it down */
   margin-top: 0 !important;
   padding-top: 0 !important;
@@ -323,9 +320,9 @@ p {
 /* Handwritten Note */
 .handwritten-note {
   position: fixed;
-  bottom: 2.5rem;
-  left: 2rem;
-  text-align: left;
+  bottom: 5rem;
+  right: 2rem;
+  text-align: justify;
   width: 20%;
   line-height: 1.4;
 }
@@ -352,9 +349,10 @@ p {
   /* body {
     background-color: lightblue;
   } */
-  .window {
-    height: 650px;
-    margin: 9.5rem auto;
+  .tree {
+    height: 800px;
+    margin-left: 10rem;
+    margin-top: -2rem;
   }
 }
 
@@ -363,9 +361,9 @@ p {
   /* body {
     background-color: lightblue;
   } */
-  .window {
-    height: 600px;
-    margin: 12rem auto;
+  .tree {
+    height: 790px;
+    margin: 1rem 6rem;
   }
   .nav-general {
     /* background-color: lightblue; */
@@ -375,10 +373,23 @@ p {
 }
 
 /* Styles below 950px */
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   /* body {
       background-color: lightblue;
     } */
+  .tree {
+    height: 740px;
+    margin: 3rem 6rem;
+  }
+  .handwritten-note {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .tree {
+    height: 720px;
+    margin: 4rem;
+  }
 }
 
 /* Styles for screens LARGER than 650px (Desktop View) */
@@ -425,23 +436,22 @@ p {
   .mobile-menu-wrapper {
     z-index: 2000;
   }
-
-  .window {
-    height: 590px;
-    max-width: 650px;
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* transition: 0.5s ease; */
+  .anna-rizvi {
+    width: 300px;
+    margin-left: -1.1rem;
   }
-  .handwritten-note {
-    display: none;
+  .navigation-container p {
+    font-size: larger;
+  }
+  .tree {
+    height: 620px;
+    max-width: auto;
+    margin: 10rem auto;
   }
 }
 
 @media (max-width: 450px) {
-  .window {
+  .tree {
     top: 40%;
   }
 }
