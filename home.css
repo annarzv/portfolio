@@ -9,8 +9,6 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: #fffff5;
-  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23FFFFF5" stroke="%23000" stroke-width="2" stroke-linejoin="round" d="M18 14.88 8.16 3.15c-.26-.31-.76-.12-.76.28v15.31c0 .36.42.56.7.33l3.1-2.6 1.55 4.25c.08.22.33.34.55.26l1.61-.59a.43.43 0 0 0 .26-.55l-1.55-4.25h4.05c.36 0 .56-.42.33-.7Z"></path></svg>'),
-    auto;
 }
 
 html {
@@ -134,107 +132,6 @@ p {
 .tree-container {
   margin-top: 0 !important;
   padding-top: 0 !important;
-}
-
-/* Door Project Polaroid  */
-#door-preview {
-  position: fixed;
-  height: 210px;
-  width: 250px;
-  top: 2rem;
-  right: 2rem;
-  border: 1px solid black;
-}
-/* Analog Project Polaroid */
-#analog-preview {
-  position: fixed;
-  height: 210px;
-  width: 250px;
-  top: 16.5rem;
-  right: 2rem;
-  border: 1px solid black;
-}
-/* Pixelstan Project Polaroid */
-#pixelstan-preview {
-  position: fixed;
-  height: 210px;
-  width: 250px;
-  bottom: 2rem;
-  right: 2rem;
-  border: 1px solid black;
-}
-
-/* SFML Poster Preview */
-#sfml-preview {
-  position: fixed;
-  height: 217px;
-  top: 2rem;
-  right: 2rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 1px solid black;
-}
-/* Veera Poster Preview */
-#veera-preview {
-  position: fixed;
-  height: 217px;
-  top: 16.5rem;
-  right: 2rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 1px solid black;
-}
-/* Priyanka Poster Preview */
-#priyanka-preview {
-  position: fixed;
-  height: 210px;
-  bottom: 2rem;
-  right: 2rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 1px solid black;
-}
-
-/* Film Photo 1 Preview  */
-#film1-preview {
-  position: fixed;
-  height: 150px;
-  top: 2rem;
-  right: 2rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 1px solid black;
-}
-/* Film Photo 2 Preview  */
-#film2-preview {
-  position: fixed;
-  height: 150px;
-  top: 13rem;
-  right: 2rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 1px solid black;
-}
-/* Film Photo 3 Preview */
-#film3-preview {
-  position: fixed;
-  height: 150px;
-  top: 24rem;
-  right: 2rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 1px solid black;
-}
-/* Film Photo 3 Preview */
-#film4-preview {
-  position: fixed;
-  height: 150px;
-  bottom: 2rem;
-  right: 2rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 1px solid black;
-}
-
-/* About Preview */
-#about-preview {
-  position: fixed;
-  height: 500px;
-  bottom: 2rem;
-  right: 7rem;
 }
 
 /* Close Icon (Fixed at the top right) - Keep the position fixed */
