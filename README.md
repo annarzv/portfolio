@@ -1,1 +1,3 @@
-# portfolio an attempt to summarize myself digitally
+# portfolio
+
+an attempt to summarize myself digitally - thanks for being here :-)
