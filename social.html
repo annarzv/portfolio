@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="social.css">
+        <!-- Load an icosn library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- MAIN LEFT COLUMN NAV -->
+        <header class="mobile-header-fixed">
+            <nav class="navigation-container">
+                <a href="index.html">
+                    <div class="anna-rizvi">
+                        <img src="anna.gif">
+                    </div>
+                </a>
+                <p class="intro">
+                    designing,
+                    <br>
+                    developing,
+                    <br>
+                    but mostly touching grass
+                </p>
+                <div class="nav-general">
+                    <a href="web.html" class="nav-item">Web</a>
+                    <a href="social.html" class="nav-item" id="test-hover">Social</a>
+                    <a href="35mm.html" class="nav-item">35mm</a>
+                    <a href="about.html" class="nav-item">About</a>
+                </div>
+            </nav>
+            <a href="javascript:void(0);" class="open-icon" onclick="toggleMobileMenu()">
+                <span class="dot-line dot-1"></span>
+                <span class="dot-line dot-2"></span>
+                <span class="dot-line dot-3"></span>
+            </a>
+            <a href="javascript:void(0);" class="close-icon" onclick="toggleMobileMenu()">
+                <i class="fa fa-times"></i>
+            </a>
+        </header>
+        <!-- MOBILE HAMBURGER MENU -->
+        <div id="fullScreenMenu" class="mobile-menu-wrapper">
+            <div class="menu-links">
+                <a href="web.html" class="mobile-nav-item">Web</a>
+                <a href="social.html" class="mobile-nav-item">Social</a>
+                <a href="35mm.html" class="mobile-nav-item">35mm</a>
+                <a href="about.html" class="mobile-nav-item">About</a>
+                <div class="social-icons">
+                    <i class="fa fa-github"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+        <!-- GALLERY -->
+        <div class="row">
+            <div class="column">
+                <a href="media/social/veera-zine.pdf" target="_blank">
+                    <img src="media/social/zine-cover.png">
+                </a>
+            </div>
+            <div class="column">
+                <a href="https://www.instagram.com/p/DA8V6DwJ8BB/?hl=en&img_index=1" target="_blank">
+                    <img src="media/social/4.png">
+                </a>
+            </div>
+            <div class="column">
+                <img src="media/social/veera-white.png">
+            </div>
+            <div class="column">
+                <img src="media/social/mahum-bday.png">
+            </div>
+            <div class="column">
+                <a href="https://www.instagram.com/p/DPewsH5Aa4M/?img_index=1" target="_blank">
+                    <img src="media/social/Erika Oba.png">
+                </a>
+            </div>
+            <div class="column">
+                <a href="https://www.instagram.com/p/C_IoZakMoTm/?hl=en&img_index=1" target="_blank">
+                    <img src="media/social/women's-equality.png">
+                </a>
+            </div>
+            <div class="column">
+                <a href="https://www.instagram.com/p/C_f2pExqFN8/?hl=en" target="_blank">
+                    <img src="media/social/asha.png">
+                </a>
+            </div>
+            <div class="column">
+                <video controls>
+                    <source src="media/social/Story Post 1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="column">
+                <a href="https://www.instagram.com/p/DCy5UiwpR_O/?hl=en&img_index=1" target="_blank">
+                    <img src="media/social/1.png">
+                </a>
+            </div>
+            <div class="column">
+                <video controls>
+                    <source src="media/social/SFML-teaser.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="column">
+                <video controls>
+                    <source src="media/social/storypost4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <!-- General jQuery file -->
+        <script src="jquery/jquery-3.7.1.min.js"></script>
+        <!-- Linking Personal JS file -->
+        <script src="scripts.js"></script>
+    </body>
+</html>
