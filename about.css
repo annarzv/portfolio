@@ -1,3 +1,44 @@
 .intro {
   font-size: 95%;
 }
+.about-container {
+  /* background-color: lightgoldenrodyellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin-left: 17rem;
+  margin-top: -2rem;
+  padding-bottom: 3rem;
+}
+
+.about-img {
+  height: auto;
+  max-width: 70%;
+  padding-bottom: 0.5rem;
+  /* background-color: lightblue; */
+}
+.about-blurb {
+  /* background-color: rgb(174, 255, 234); */
+  max-width: 70%;
+  padding-right: 5rem;
+  text-align: justify;
+}
+
+.about-blurb p {
+  line-height: 1.6;
+}
+
+@media (max-width: 651px) {
+  .about-container {
+    /* background-color: lightblue; */
+    margin: 6rem auto;
+  }
+  .about-img {
+    max-width: 100%;
+  }
+  .about-blurb {
+    max-width: 95%;
+    padding-right: 3rem;
+  }
+}
