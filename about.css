@@ -35,10 +35,22 @@
     margin: 6rem auto;
   }
   .about-img {
-    max-width: 100%;
+    max-width: 95%;
+    padding-right: 1.5rem;
   }
   .about-blurb {
     max-width: 95%;
     padding-right: 3rem;
+    text-align: left;
+  }
+  .about-blurb h2 {
+    font-size: 120%;
+  }
+  /* .about-blurb p {
+    background-color: lightblue;
+  } */
+  .anna-rizvi {
+    /* width: 250px; */
+    margin-left: -1.1rem;
   }
 }
