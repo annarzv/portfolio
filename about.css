@@ -8,8 +8,8 @@
   justify-content: end;
   align-items: end;
   margin-left: 17rem;
-  margin-top: -2rem;
-  padding-bottom: 3rem;
+  margin-top: -3rem;
+  /* padding-bottom: 3rem; */
 }
 
 .about-img {
@@ -29,10 +29,32 @@
   line-height: 1.6;
 }
 
+#mail-illustration {
+  height: 30px;
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+@media (max-width: 1250px) {
+  .about-blurb {
+    padding-right: 3rem;
+    /* background-color: rgb(191, 230, 173); */
+  }
+}
+
+@media (max-width: 950px) {
+  .about-blurb {
+    padding-right: 2rem;
+    text-align: left;
+    /* background-color: rgb(191, 230, 173); */
+  }
+}
+
 @media (max-width: 651px) {
   .about-container {
     /* background-color: lightblue; */
-    margin: 6rem auto;
+    margin: 5rem auto;
   }
   .about-img {
     max-width: 95%;
@@ -46,11 +68,14 @@
   .about-blurb h2 {
     font-size: 120%;
   }
-  /* .about-blurb p {
-    background-color: lightblue;
-  } */
+
   .anna-rizvi {
     /* width: 250px; */
     margin-left: -1.1rem;
+  }
+
+  #mail-illustration {
+    height: 25px;
+    left: 85%;
   }
 }
