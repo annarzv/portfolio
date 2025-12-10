@@ -346,10 +346,11 @@ p {
   .tree {
     height: 700px;
     max-width: 100%;
-    margin: 11rem auto;
+    margin: 10rem auto;
     /* background-color: lightgreen; */
   }
 }
+
 
 @media (max-width: 450px) {
   .tree {

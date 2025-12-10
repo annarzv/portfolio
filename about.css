@@ -9,19 +9,18 @@
   align-items: end;
   margin-left: 17rem;
   margin-top: -3rem;
-  /* padding-bottom: 3rem; */
+  padding-bottom: 1rem;
 }
 
 .about-img {
   height: auto;
-  max-width: 70%;
-  padding-bottom: 0.5rem;
+  max-width: 73%;
   /* background-color: lightblue; */
 }
 .about-blurb {
   /* background-color: rgb(174, 255, 234); */
-  max-width: 70%;
-  padding-right: 5rem;
+  max-width: 73%;
+  padding-right: 1.5rem;
   text-align: justify;
 }
 
@@ -45,8 +44,8 @@
 
 @media (max-width: 950px) {
   .about-blurb {
-    padding-right: 2rem;
-    text-align: left;
+    padding-right: 1.5rem;
+    text-align: justify;
     /* background-color: rgb(191, 230, 173); */
   }
 }
@@ -56,6 +55,7 @@
     /* background-color: lightblue; */
     margin: 5rem auto;
   }
+
   .about-img {
     max-width: 95%;
     padding-right: 1.5rem;
@@ -70,8 +70,8 @@
   }
 
   .anna-rizvi {
-    /* width: 250px; */
-    margin-left: -1.1rem;
+    width: 200px;
+    margin-left: -0.9rem;
   }
 
   #mail-illustration {
