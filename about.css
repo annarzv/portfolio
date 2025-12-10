@@ -32,7 +32,7 @@
   height: 30px;
   position: fixed;
   left: 1rem;
-  bottom: 1rem;
+  bottom: 2rem;
 }
 
 @media (max-width: 1250px) {
@@ -76,6 +76,6 @@
 
   #mail-illustration {
     height: 25px;
-    left: 85%;
+    left: 80%;
   }
 }
