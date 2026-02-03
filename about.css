@@ -30,14 +30,14 @@
 }
 footer {
   text-align: right;
-  font-weight: bold;
-  color: black;
+  /* font-weight: bold; */
+  color: rgb(49, 48, 48);
   margin-top: 4rem;
   padding-right: 3.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 90%;
+  padding-bottom: 1rem;
+  font-size: 80%;
   line-height: 0.5;
-  background-color: #fffffa;
+  /* background-color: #fffffa; */
 }
 
 #mail-illustration {
@@ -85,7 +85,7 @@ footer {
 
 @media (max-width: 651px) {
   .about-container {
-    margin: 5rem auto;
+    margin: 0rem auto;
   }
   .about-img {
     max-width: 95%;
@@ -108,5 +108,8 @@ footer {
     font-size: 80%;
     text-align: center;
     padding-bottom: 1.5rem;
+  }
+  #mail-illustration {
+    left: 85%;
   }
 }
