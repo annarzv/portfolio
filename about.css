@@ -73,7 +73,7 @@
   }
   .about-blurb {
     max-width: 92%;
-    padding-right: 2rem;
+    padding-right: 1.5rem;
     padding-top: 0.5rem;
     text-align: left;
     font-size: 85%;
@@ -81,7 +81,7 @@
   }
   .anna-rizvi {
     width: 200px;
-    margin-left: -0.4rem;
+    margin-left: -0.8rem;
   }
   #mail-illustration {
     height: 25px;
