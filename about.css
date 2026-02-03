@@ -28,6 +28,17 @@
 .about-blurb p {
   line-height: 1.6;
 }
+footer {
+  text-align: right;
+  font-weight: bold;
+  color: black;
+  margin-top: 4rem;
+  padding-right: 3.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 90%;
+  line-height: 0.5;
+  background-color: #fffffa;
+}
 
 #mail-illustration {
   height: 30px;
@@ -50,6 +61,15 @@
     height: auto;
     max-width: 66%;
     /* background-color: lightblue; */
+  }
+  footer {
+    /* background-color: #caf2ff; */
+    text-align: left;
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+  #mail-illustration {
+    left: 89%;
   }
 }
 
@@ -83,8 +103,10 @@
     width: 200px;
     margin-left: -0.8rem;
   }
-  #mail-illustration {
-    height: 25px;
-    left: 80%;
+  footer {
+    padding-top: 0;
+    font-size: 80%;
+    text-align: center;
+    padding-bottom: 1.5rem;
   }
 }
