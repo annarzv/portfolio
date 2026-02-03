@@ -8,20 +8,21 @@
   justify-content: end;
   align-items: end;
   margin-left: 17rem;
-  margin-top: -3rem;
+  margin-right: 3rem;
+  margin-top: 0.5rem;
   padding-bottom: 1rem;
 }
 
 .about-img {
-  height: auto;
-  max-width: 73%;
+  height: 65%;
+  max-width: 55%;
   /* background-color: lightblue; */
 }
 .about-blurb {
   /* background-color: rgb(174, 255, 234); */
-  max-width: 73%;
-  padding-right: 1.5rem;
-  text-align: justify;
+  max-width: 55%;
+  text-align: right;
+  padding-right: 1rem;
 }
 
 .about-blurb p {
@@ -35,45 +36,53 @@
   bottom: 2rem;
 }
 
-@media (max-width: 1250px) {
-  .about-blurb {
-    padding-right: 3rem;
-    /* background-color: rgb(191, 230, 173); */
-  }
-}
+/* 
+--- MEDIA QUERIES ---
+*/
 
 @media (max-width: 950px) {
   .about-blurb {
-    padding-right: 1.5rem;
-    text-align: justify;
-    /* background-color: rgb(191, 230, 173); */
+    text-align: left;
+    max-width: 65%;
+    font-size: 92%;
+  }
+  .about-img {
+    height: auto;
+    max-width: 66%;
+    /* background-color: lightblue; */
+  }
+}
+
+@media (max-width: 750px) {
+  .about-img {
+    height: auto;
+    max-width: 76%;
+  }
+  .about-blurb {
+    max-width: 75%;
   }
 }
 
 @media (max-width: 651px) {
   .about-container {
-    /* background-color: lightblue; */
     margin: 5rem auto;
   }
-
   .about-img {
     max-width: 95%;
     padding-right: 1.5rem;
   }
   .about-blurb {
-    max-width: 95%;
-    padding-right: 3rem;
+    max-width: 92%;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
     text-align: left;
+    font-size: 85%;
+    /* background-color: aquamarine; */
   }
-  .about-blurb h2 {
-    font-size: 120%;
-  }
-
   .anna-rizvi {
     width: 200px;
-    margin-left: -0.9rem;
+    margin-left: -0.4rem;
   }
-
   #mail-illustration {
     height: 25px;
     left: 80%;
