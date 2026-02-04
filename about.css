@@ -107,7 +107,7 @@ footer {
   footer {
     margin: -4.5rem auto;
     padding-top: 0;
-    font-size: 80%;
+    font-size: 70%;
     text-align: left;
     padding: 1rem;
     /* background-color: aquamarine; */
@@ -116,5 +116,6 @@ footer {
   }
   #mail-illustration {
     left: 80%;
+    bottom: 1.3rem;
   }
 }
