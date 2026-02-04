@@ -31,7 +31,7 @@
 footer {
   text-align: right;
   /* font-weight: bold; */
-  color: rgb(49, 48, 48);
+  color: rgb(95, 93, 93);
   margin-top: 4rem;
   padding-right: 3.5rem;
   padding-bottom: 1rem;
@@ -105,13 +105,14 @@ footer {
     margin-left: -0.8rem;
   }
   footer {
-    margin: -6rem auto;
+    margin: -4.5rem auto;
     padding-top: 0;
     font-size: 80%;
     text-align: left;
     padding: 1rem;
     /* background-color: aquamarine; */
     max-width: 92%;
+    /* font-style: italic; */
   }
   #mail-illustration {
     left: 80%;
