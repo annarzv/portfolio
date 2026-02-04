@@ -98,14 +98,14 @@ footer {
     margin: 0 auto;
     text-align: left;
     font-size: 85%;
-    /* background-color: aquamarine; */
+    /* background-color: rgb(127, 146, 255); */
   }
   .anna-rizvi {
     width: 200px;
     margin-left: -0.8rem;
   }
   footer {
-    margin: -5rem auto;
+    margin: -6rem auto;
     padding-top: 0;
     font-size: 80%;
     text-align: left;
