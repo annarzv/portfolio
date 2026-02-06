@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Illustrations</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="social.css">
+        <!-- Load an icosn library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- MAIN LEFT COLUMN NAV -->
+        <header class="mobile-header-fixed">
+            <nav class="navigation-container">
+                <a href="index.html">
+                    <div class="anna-rizvi">
+                        <img src="anna.gif">
+                    </div>
+                </a>
+                <p class="intro">
+                    designing,
+                    <br>
+                    developing,
+                    <br>
+                    but mostly touching grass
+                </p>
+                <div class="nav-general">
+                    <a href="web.html" class="nav-item">Web</a>
+                    <a href="social.html" class="nav-item" id="test-hover">Social</a>
+                    <a href="35mm.html" class="nav-item">35mm</a>
+                    <a href="illustrations.html" class="nav-item">Illustrations</a>
+                    <a href="about.html" class="nav-item">About</a>
+                </div>
+            </nav>
+            <a href="javascript:void(0);" class="open-icon" onclick="toggleMobileMenu()">
+                <span class="dot-line dot-1"></span>
+                <span class="dot-line dot-2"></span>
+                <span class="dot-line dot-3"></span>
+            </a>
+            <a href="javascript:void(0);" class="close-icon" onclick="toggleMobileMenu()">
+                <i class="fa fa-times"></i>
+            </a>
+        </header>
+        <!-- MOBILE HAMBURGER MENU -->
+        <div id="fullScreenMenu" class="mobile-menu-wrapper">
+            <div class="menu-links">
+                <a href="web.html" class="mobile-nav-item">Web</a>
+                <a href="social.html" class="mobile-nav-item">Social</a>
+                <a href="35mm.html" class="mobile-nav-item">35mm</a>
+                <a href="illustrations.html" class="mobile-nav-item">Illustrations</a>
+                <a href="about.html" class="mobile-nav-item">About</a>
+                <div class="social-icons">
+                    <a href="https://github.com/annarzv" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anna-rizvi333?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:annabrizvi@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- GALLERY -->
+        <div class="row">
+            <div class="column">
+                <img src="media/illustrations/moonriver.PNG">
+            </div>
+            <div class="column">
+                <img src="media/illustrations/Matcha.png">
+            </div>
+            <div class="column">
+                <img src="media/illustrations/bike.GIF">
+            </div>
+            <div class="column">
+                <img src="media/illustrations/Coffee.gif">
+            </div>
+            <div class="column">
+                <img src="media/illustrations/fish.GIF">
+            </div>
+            <div class="column">
+                <img src="media/illustrations/bye.PNG">
+            </div>
+            <div class="column">
+                <img src="media/illustrations/annab&w.PNG">
+            </div>
+            <div class="column">
+                <img src="media/illustrations/Pink_motif_.PNG">
+            </div>
+        </div>
+        <!-- General jQuery file -->
+        <script src="jquery/jquery-3.7.1.min.js"></script>
+        <!-- Linking Personal JS file -->
+        <script src="scripts.js"></script>
+    </body>
+</html>
